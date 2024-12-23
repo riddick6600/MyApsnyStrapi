@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_hotel_room_types",
+  "info": {
+    "displayName": "Тип номера"
+  },
+  "attributes": {
+    "externalId": {
+      "type": "string",
+      "displayName": "Внешний ID"
+    },
+    "name": {
+      "type": "string",
+      "displayName": "Название"
+    },
+    "description": {
+      "type": "text",
+      "displayName": "Описание"
+    },
+    "amenities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.amenity",
+      "displayName": "Удобства"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.image",
+      "displayName": "Изображения"
+    },
+    "size": {
+      "type": "component",
+      "component": "hotel.room-type-square",
+      "displayName": "Площадь"
+    },
+    "categoryCode": {
+      "type": "string",
+      "displayName": "Код категории"
+    },
+    "categoryName": {
+      "type": "string",
+      "displayName": "Название категории"
+    },
+    "address": {
+      "type": "component",
+      "component": "hotel.address",
+      "displayName": "Адрес"
+    },
+    "occupancy": {
+      "type": "component",
+      "component": "hotel.occupancy-info",
+      "displayName": "Вместимость"
+    },
+    "placements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.placement",
+      "displayName": "Размещения"
+    },
+    "position": {
+      "type": "integer",
+      "displayName": "Позиция"
+    }
+  }
+}

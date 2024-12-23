@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_hotel_policy_infos",
+    "info": {
+        "displayName": "Правила проживания"
+    },
+    "attributes": {
+        "checkInTime": {
+            "type": "string",
+            "displayName": "Время заезда"
+        },
+        "checkOutTime": {
+            "type": "string",
+            "displayName": "Время выезда"
+        }
+    }
+}

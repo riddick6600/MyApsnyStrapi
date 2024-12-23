@@ -1,0 +1,41 @@
+{
+    "collectionName": "components_hotel_rate_plans",
+    "info": {
+        "displayName": "Тарифный план"
+    },
+    "attributes": {
+        "externalId": {
+            "type": "string",
+            "displayName": "Внешний ID"
+        },
+        "name": {
+            "type": "string",
+            "displayName": "Название"
+        },
+        "description": {
+            "type": "text",
+            "displayName": "Описание"
+        },
+        "currency": {
+            "type": "string",
+            "displayName": "Валюта"
+        },
+        "isStayWithChildrenOnly": {
+            "type": "boolean",
+            "displayName": "Только для проживания с детьми"
+        },
+        "cancellationRuleId": {
+            "type": "string",
+            "displayName": "ID правила отмены"
+        },
+        "extraStayRuleId": {
+            "type": "string",
+            "displayName": "ID правила доп. проживания"
+        },
+        "vat": {
+            "type": "component",
+            "component": "hotel.vat",
+            "displayName": "НДС"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "collectionName": "components_hotel_placements",
+    "info": {
+        "displayName": "Размещение"
+    },
+    "attributes": {
+        "kind": {
+            "type": "enumeration",
+            "enum": [
+                "Adult",
+                "ExtraAdult",
+                "Child",
+                "ExtraChild",
+                "ChildBandWithoutBed"
+            ],
+            "displayName": "Тип"
+        },
+        "count": {
+            "type": "integer",
+            "displayName": "Количество"
+        },
+        "minAge": {
+            "type": "integer",
+            "displayName": "Минимальный возраст"
+        },
+        "maxAge": {
+            "type": "integer",
+            "displayName": "Максимальный возраст"
+        }
+    }
+}

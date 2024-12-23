@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_hotel_contact_infos",
+    "info": {
+        "displayName": "Контактная информация"
+    },
+    "attributes": {
+        "address": {
+            "type": "component",
+            "component": "hotel.address",
+            "displayName": "Адрес"
+        },
+        "phones": {
+            "type": "component",
+            "repeatable": true,
+            "component": "hotel.phone",
+            "displayName": "Телефоны"
+        },
+        "emails": {
+            "type": "string",
+            "repeatable": true,
+            "displayName": "Электронные адреса"
+        }
+    }
+}

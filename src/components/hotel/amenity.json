@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_hotel_amenities",
+  "info": {
+    "displayName": "Удобство"
+  },
+  "attributes": {
+    "code": {
+      "type": "string",
+      "displayName": "Код"
+    },
+    "name": {
+      "type": "string",
+      "displayName": "Название"
+    }
+  }
+}

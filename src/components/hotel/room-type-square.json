@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_hotel_room_type_squares",
+  "info": {
+    "displayName": "Площадь номера"
+  },
+  "attributes": {
+    "value": {
+      "type": "integer",
+      "displayName": "Значение"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_hotel_phones",
+    "info": {
+        "displayName": "Телефон"
+    },
+    "attributes": {
+        "phoneNumber": {
+            "type": "string",
+            "displayName": "Номер телефона"
+        },
+        "remark": {
+            "type": "string",
+            "displayName": "Примечание"
+        }
+    }
+}

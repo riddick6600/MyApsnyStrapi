@@ -1,0 +1,20 @@
+{
+    "collectionName": "components_hotel_occupancy_infos",
+    "info": {
+        "displayName": "Информация о вместимости"
+    },
+    "attributes": {
+        "adultBed": {
+            "type": "integer",
+            "displayName": "Кровати для взрослых"
+        },
+        "extraBed": {
+            "type": "integer",
+            "displayName": "Дополнительные кровати"
+        },
+        "childWithoutBed": {
+            "type": "integer",
+            "displayName": "Дети без кровати"
+        }
+    }
+}

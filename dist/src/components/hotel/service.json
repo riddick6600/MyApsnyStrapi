@@ -1,0 +1,49 @@
+{
+    "collectionName": "components_hotel_services",
+    "info": {
+        "displayName": "Услуга"
+    },
+    "attributes": {
+        "externalId": {
+            "type": "string",
+            "displayName": "Внешний ID"
+        },
+        "name": {
+            "type": "string",
+            "displayName": "Название"
+        },
+        "description": {
+            "type": "text",
+            "displayName": "Описание"
+        },
+        "kind": {
+            "type": "enumeration",
+            "enum": ["Common", "Meal"],
+            "displayName": "Тип услуги"
+        },
+        "mealPlanCode": {
+            "type": "string",
+            "displayName": "Код типа питания"
+        },
+        "mealPlanName": {
+            "type": "string",
+            "displayName": "Название типа питания"
+        },
+        "images": {
+            "type": "component",
+            "repeatable": true,
+            "component": "hotel.image",
+            "displayName": "Изображения"
+        },
+        "status": {
+            "type": "enumeration",
+            "enum": ["Active", "Inactive"],
+            "displayName": "Статус"
+        },
+        "vat": {
+            "type": "component",
+            "component": "hotel.vat",
+            "displayName": "НДС"
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_hotel_images",
+  "info": {
+    "displayName": "Изображение"
+  },
+  "attributes": {
+    "url": {
+      "type": "string",
+      "displayName": "URL"
+    }
+  }
+}

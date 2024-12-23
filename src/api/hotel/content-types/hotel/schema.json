@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotels",
+  "info": {
+    "singularName": "hotel",
+    "pluralName": "hotels",
+    "displayName": "Hotel"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "externalId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.image"
+    },
+    "stars": {
+      "type": "integer"
+    },
+    "stayUnitKind": {
+      "type": "enumeration",
+      "enum": ["NightRate", "DailyRate"]
+    },
+    "contactInfo": {
+      "type": "component",
+      "component": "hotel.contact-info"
+    },
+    "policy": {
+      "type": "component",
+      "component": "hotel.policy-info"
+    },
+    "timeZone": {
+      "type": "string"
+    },
+    "ratePlans": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.rate-plan"
+    },
+    "roomTypes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.room-type"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.service"
+    },
+    "multiLocationProperty": {
+      "type": "boolean"
+    }
+  }
+}

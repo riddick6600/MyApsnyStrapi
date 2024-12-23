@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_hotel_addresses",
+  "info": {
+    "displayName": "Адрес"
+  },
+  "attributes": {
+    "postalCode": {
+      "type": "string",
+      "displayName": "Почтовый индекс"
+    },
+    "countryCode": {
+      "type": "string",
+      "displayName": "Код страны"
+    },
+    "region": {
+      "type": "string",
+      "displayName": "Регион"
+    },
+    "regionId": {
+      "type": "string",
+      "displayName": "ID региона"
+    },
+    "cityName": {
+      "type": "string",
+      "displayName": "Город"
+    },
+    "cityId": {
+      "type": "string",
+      "displayName": "ID города"
+    },
+    "addressLine": {
+      "type": "string",
+      "displayName": "Адресная строка"
+    },
+    "latitude": {
+      "type": "float",
+      "displayName": "Широта"
+    },
+    "longitude": {
+      "type": "float",
+      "displayName": "Долгота"
+    }
+  }
+} 
