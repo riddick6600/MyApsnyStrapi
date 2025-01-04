@@ -15,10 +15,6 @@
     "name": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
-      "required": false
-    },
     "description": {
       "type": "text"
     },
@@ -29,9 +25,9 @@
       "mappedBy": "categories"
     },
     "page": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::page.page"
+      "type": "component",
+      "repeatable": false,
+      "component": "page.page"
     }
   }
 }

@@ -12,26 +12,12 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "name": {
       "type": "string"
     },
     "description": {
       "type": "text",
       "maxLength": 80
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
-    "cover": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
     },
     "categories": {
       "type": "relation",
@@ -40,9 +26,9 @@
       "inversedBy": "articles"
     },
     "page": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::page.page"
+      "type": "component",
+      "repeatable": false,
+      "component": "page.page"
     }
   }
 }
