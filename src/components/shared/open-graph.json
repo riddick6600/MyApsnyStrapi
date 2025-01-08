@@ -8,13 +8,11 @@
   "attributes": {
     "og:title": {
       "type": "string",
-      "required": true,
       "maxLength": 70
     },
     "og:description": {
       "type": "string",
-      "maxLength": 200,
-      "required": true
+      "maxLength": 200
     },
     "og:image": {
       "allowedTypes": [

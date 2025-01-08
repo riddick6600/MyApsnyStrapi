@@ -8,13 +8,11 @@
   "options": {},
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "slug": {
       "type": "string",
-      "unique": true,
-      "required": true
+      "unique": true
     },
     "content": {
       "type": "richtext"

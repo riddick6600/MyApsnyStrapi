@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_hotel_rate_plan",
+  "info": {
+    "displayName": "Тарифный план",
+    "icon": "dollar-sign",
+    "description": "Тарифный план отеля"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "basePrice": {
+      "type": "decimal",
+      "min": 0
+    },
+    "isStayWithChildrenOnly": {
+      "type": "boolean",
+      "default": false
+    },
+    "cancellationRuleId": {
+      "type": "string"
+    },
+    "extraStayRuleId": {
+      "type": "string"
+    },
+    "vat": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "json"
+    }
+  }
+}

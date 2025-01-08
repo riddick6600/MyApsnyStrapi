@@ -1,0 +1,24 @@
+{
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "double",
+        "queen",
+        "king",
+        "sofa",
+        "bunk"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "min": 1
+    }
+  },
+  "collectionName": "components_hotel_bed",
+  "info": {
+    "displayName": "Кровать",
+    "icon": "bed"
+  }
+}

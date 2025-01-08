@@ -1,0 +1,68 @@
+{
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "categoryType": {
+      "type": "enumeration",
+      "enum": [
+        "Room",
+        "Suite",
+        "Apartment",
+        "Villa",
+        "Cottage",
+        "Hostel"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "size": {
+      "type": "decimal",
+      "min": 0
+    },
+    "maxAdults": {
+      "type": "integer",
+      "min": 1
+    },
+    "maxChildren": {
+      "type": "integer",
+      "min": 0,
+      "default": 0
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "amenities": {
+      "type": "component",
+      "component": "hotel.amenity",
+      "repeatable": true
+    },
+    "beds": {
+      "type": "component",
+      "component": "hotel.bed",
+      "repeatable": true
+    },
+    "pricing": {
+      "type": "component",
+      "component": "hotel.price",
+      "repeatable": true
+    }
+  },
+  "collectionName": "components_hotel_room_category",
+  "info": {
+    "displayName": "Категория номера",
+    "icon": "bed"
+  }
+}

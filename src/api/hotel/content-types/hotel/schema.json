@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotels",
+  "info": {
+    "singularName": "hotel",
+    "pluralName": "hotels",
+    "displayName": "Отель",
+    "description": "Отели"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "place": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::place.place"
+    },
+    "page": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.page"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "travelline": {
+      "displayName": "travelline",
+      "type": "component",
+      "repeatable": false,
+      "component": "integration.travelline"
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "stars": {
+      "type": "integer",
+      "min": 0,
+      "max": 5
+    },
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contactInfo": {
+      "type": "component",
+      "component": "hotel.contact-info"
+    },
+    "policy": {
+      "type": "component",
+      "component": "hotel.policy"
+    },
+    "ratePlans": {
+      "type": "component",
+      "component": "hotel.rate-plan",
+      "repeatable": true
+    },
+    "roomCategories": {
+      "type": "component",
+      "component": "hotel.room-category",
+      "repeatable": true
+    }
+  }
+}

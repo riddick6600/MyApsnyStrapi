@@ -1,0 +1,27 @@
+{
+  "attributes": {
+    "address": {
+      "type": "component",
+      "component": "common.address"
+    },
+    "phones": {
+      "type": "component",
+      "component": "common.phone",
+      "repeatable": true,
+      "min": 1
+    },
+    "emails": {
+      "type": "email",
+      "repeatable": true
+    },
+    "website": {
+      "type": "string"
+    }
+  },
+  "collectionName": "components_hotel_contact_info",
+  "info": {
+    "displayName": "Контактная информация",
+    "icon": "phone",
+    "description": "Контактные данные отеля"
+  }
+}

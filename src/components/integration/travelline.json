@@ -1,0 +1,29 @@
+{
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "propertyId": {
+      "type": "string"
+    },
+    "apiKey": {
+      "type": "string",
+      "private": true
+    },
+    "lastSync": {
+      "type": "datetime"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "mappings": {
+      "type": "json"
+    }
+  },
+  "collectionName": "components_integration_travelline",
+  "info": {
+    "displayName": "TravelLine Integration",
+    "icon": "link"
+  }
+}

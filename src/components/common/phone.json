@@ -1,0 +1,29 @@
+{
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "mobile",
+        "landline",
+        "fax",
+        "whatsapp"
+      ],
+      "default": "mobile"
+    },
+    "primary": {
+      "type": "boolean",
+      "default": false
+    },
+    "comment": {
+      "type": "string"
+    }
+  },
+  "collectionName": "components_common_phone",
+  "info": {
+    "displayName": "Телефон",
+    "icon": "phone"
+  }
+}

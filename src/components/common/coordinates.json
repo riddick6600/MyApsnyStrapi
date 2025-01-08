@@ -1,0 +1,19 @@
+{
+  "attributes": {
+    "latitude": {
+      "type": "decimal",
+      "min": -90,
+      "max": 90
+    },
+    "longitude": {
+      "type": "decimal",
+      "min": -180,
+      "max": 180
+    }
+  },
+  "collectionName": "components_common_coordinates",
+  "info": {
+    "displayName": "Координаты",
+    "icon": "location"
+  }
+}

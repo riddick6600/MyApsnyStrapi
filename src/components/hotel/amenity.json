@@ -1,0 +1,30 @@
+{
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "bathroom",
+        "bedroom",
+        "kitchen",
+        "entertainment",
+        "climate",
+        "internet",
+        "other"
+      ]
+    },
+    "icon": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "collectionName": "components_hotel_amenity",
+  "info": {
+    "displayName": "Удобство",
+    "icon": "star"
+  }
+}
