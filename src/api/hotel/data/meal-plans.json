@@ -1,0 +1,78 @@
+[
+    {
+        "code": "AllInclusive",
+        "name": "Все включено"
+    },
+    {
+        "code": "BuffetBreakfast",
+        "name": "Завтрак (шведский стол)"
+    },
+    {
+        "code": "ContinentalBreakfast",
+        "name": "Континентальный завтрак"
+    },
+    {
+        "code": "EnglishBreakfast",
+        "name": "Английский завтрак"
+    },
+    {
+        "code": "FullBoard",
+        "name": "Полный пансион"
+    },
+    {
+        "code": "HalfBoard",
+        "name": "Полупансион"
+    },
+    {
+        "code": "BreakFast",
+        "name": "Завтрак"
+    },
+    {
+        "code": "Lunch",
+        "name": "Обед"
+    },
+    {
+        "code": "Dinner",
+        "name": "Ужин"
+    },
+    {
+        "code": "FullBoardBuffet",
+        "name": "Полный пансион \"шведский стол\""
+    },
+    {
+        "code": "FullBoardCarte",
+        "name": "Полный пансион \"заказное меню\""
+    },
+    {
+        "code": "BuffetDinner",
+        "name": "Ужин \"шведский стол\""
+    },
+    {
+        "code": "DinnerCarte",
+        "name": "Ужин \"заказное меню\""
+    },
+    {
+        "code": "Custom",
+        "name": "Свой тип питания"
+    },
+    {
+        "code": "HalfBoardLunch",
+        "name": "Полупансион (завтрак + обед)"
+    },
+    {
+        "code": "HalfBoardDinner",
+        "name": "Полупансион (завтрак + ужин)"
+    },
+    {
+        "code": "AmericanBreakfast",
+        "name": "Завтрак \"Американский\""
+    },
+    {
+        "code": "HalfBoardLunchDinner",
+        "name": "Полупансион (обед и ужин)"
+    },
+    {
+        "code": "UltraAllInclusive",
+        "name": "Ультра все включено"
+    }
+]

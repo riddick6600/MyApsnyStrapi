@@ -1,0 +1,56 @@
+{
+    "extraStayRules": [
+        {
+            "id": "469259",
+            "propertyId": "5019",
+            "checkInTime": "14:00",
+            "overridesPropertyCheckInTime": false,
+            "earlyCheckInPeriods": [
+                {
+                    "startTime": "00:00",
+                    "endTime": "14:00",
+                    "chargeType": "Forbidden",
+                    "rates": [],
+                    "occupyQuota": false
+                }
+            ],
+            "checkOutTime": "12:00",
+            "overridesPropertyCheckOutTime": false,
+            "lateCheckOutPeriods": [
+                {
+                    "startTime": "12:00",
+                    "endTime": "24:00",
+                    "chargeType": "Forbidden",
+                    "rates": [],
+                    "occupyQuota": false
+                }
+            ]
+        },
+        {
+            "id": "514687",
+            "propertyId": "5019",
+            "checkInTime": "13:00",
+            "overridesPropertyCheckInTime": true,
+            "earlyCheckInPeriods": [
+                {
+                    "startTime": "00:00",
+                    "endTime": "13:00",
+                    "chargeType": "Forbidden",
+                    "rates": [],
+                    "occupyQuota": false
+                }
+            ],
+            "checkOutTime": "11:00",
+            "overridesPropertyCheckOutTime": true,
+            "lateCheckOutPeriods": [
+                {
+                    "startTime": "11:00",
+                    "endTime": "24:00",
+                    "chargeType": "Forbidden",
+                    "rates": [],
+                    "occupyQuota": false
+                }
+            ]
+        }
+    ]
+}

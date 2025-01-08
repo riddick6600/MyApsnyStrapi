@@ -1,0 +1,105 @@
+{
+    "cancellationRules": [
+        {
+            "id": "501408",
+            "propertyId": "5019",
+            "referencePointKind": "ProviderArrivalTime",
+            "cancellationTerms": [
+                {
+                    "beforeArrivalMatching": "NoMoreThan",
+                    "beforeArrivalUnit": "Hour",
+                    "beforeArrivalValue": 24,
+                    "beforeArrivalValueMax": 0,
+                    "penaltyCalculationMethod": "PrepaymentPercent",
+                    "penaltyValue": 100.0000,
+                    "penaltyValueCurrency": "RUB",
+                    "arrivalDates": [
+                        {
+                            "startDate": "2018-12-05",
+                            "endDate": "2018-12-05",
+                            "isEndless": true
+                        }
+                    ]
+                },
+                {
+                    "beforeArrivalMatching": "Between",
+                    "beforeArrivalUnit": "Day",
+                    "beforeArrivalValue": 1,
+                    "beforeArrivalValueMax": 3,
+                    "penaltyCalculationMethod": "PrepaymentPercent",
+                    "penaltyValue": 50.0000,
+                    "penaltyValueCurrency": "RUB",
+                    "arrivalDates": [
+                        {
+                            "startDate": "2024-11-13",
+                            "endDate": "2024-11-13",
+                            "isEndless": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "501409",
+            "propertyId": "5019",
+            "referencePointKind": "ProviderArrivalTime",
+            "cancellationTerms": [
+                {
+                    "beforeArrivalMatching": "NoMatter",
+                    "beforeArrivalUnit": "Hour",
+                    "beforeArrivalValue": 24,
+                    "beforeArrivalValueMax": 0,
+                    "penaltyCalculationMethod": "FirstNights",
+                    "penaltyValue": 1.0000,
+                    "penaltyValueCurrency": "RUB",
+                    "arrivalDates": [
+                        {
+                            "startDate": "2018-12-05",
+                            "endDate": "2018-12-05",
+                            "isEndless": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "684405",
+            "propertyId": "5019",
+            "referencePointKind": "ProviderArrivalTime",
+            "cancellationTerms": [
+                {
+                    "beforeArrivalMatching": "Between",
+                    "beforeArrivalUnit": "Day",
+                    "beforeArrivalValue": 1,
+                    "beforeArrivalValueMax": 2,
+                    "penaltyCalculationMethod": "PrepaymentPercent",
+                    "penaltyValue": 50.0000,
+                    "penaltyValueCurrency": "RUB",
+                    "arrivalDates": [
+                        {
+                            "startDate": "2024-11-08",
+                            "endDate": "2024-11-08",
+                            "isEndless": true
+                        }
+                    ]
+                },
+                {
+                    "beforeArrivalMatching": "NoMoreThan",
+                    "beforeArrivalUnit": "Hour",
+                    "beforeArrivalValue": 24,
+                    "beforeArrivalValueMax": 0,
+                    "penaltyCalculationMethod": "PrepaymentPercent",
+                    "penaltyValue": 80.0000,
+                    "penaltyValueCurrency": "RUB",
+                    "arrivalDates": [
+                        {
+                            "startDate": "2024-11-08",
+                            "endDate": "2024-11-08",
+                            "isEndless": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

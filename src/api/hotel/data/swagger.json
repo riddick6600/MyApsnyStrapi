@@ -1,0 +1,1421 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "TravelLine Partner - Content API",
+    "description": "API for retrieving entity of accommodation properties",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "https://partner.qatl.ru/api/content/"
+    }
+  ],
+  "paths": {
+    "/v1/properties/{propertyId}/cancellation-rules": {
+      "get": {
+        "tags": [
+          "CancellationRules"
+        ],
+        "summary": "Receive cancellation rules",
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "description": "Property ID",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "1024"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Cancellation rules",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CancellationRulesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/properties": {
+      "get": {
+        "tags": [
+          "ContentApi"
+        ],
+        "summary": "Receive property entity",
+        "parameters": [
+          {
+            "name": "since",
+            "in": "query",
+            "description": "Key to continue viewing from the required spot<br />\r\nThe number of accommodations in the response is limited, so you may not always be able to get them all within one request.<br />\r\nTo continue from the spot you left off, use this option.<br />\r\nThe value of this parameter can always be obtained from the response (‘next’ property).<br />\r\nIf you do not specify this parameter, you will obtain accommodations from the very beginning of the list.<br />\r\nAnalogue to pagination.",
+            "schema": {
+              "type": "string",
+              "example": "UlUtNDE5NQ=="
+            }
+          },
+          {
+            "name": "count",
+            "in": "query",
+            "description": "The number of elements in the response.<br />\r\nMaximum number of elements - 200 (default value)",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "example": 200
+            }
+          },
+          {
+            "name": "include",
+            "in": "query",
+            "description": "Add additional information to the response<br />\r\n‘All’ value: information about the hotel, room types, rate plans and services<br />\r\nEmpty value: ‘Id’ only",
+            "schema": {
+              "type": "string",
+              "example": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Detailed description of accommodations",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PropertyInfoPage"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/properties/{propertyId}": {
+      "get": {
+        "tags": [
+          "ContentApi"
+        ],
+        "summary": "Receive description of a property",
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "description": "Property ID",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "1024"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Property detailed information",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PropertyInfoType"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/meal-plans": {
+      "get": {
+        "tags": [
+          "ContentApi"
+        ],
+        "summary": "Receive entity of possible meal options",
+        "responses": {
+          "200": {
+            "description": "Meal entity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MealPlan"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/room-type-categories": {
+      "get": {
+        "tags": [
+          "ContentApi"
+        ],
+        "summary": "Receive entity of possible room types",
+        "responses": {
+          "200": {
+            "description": "Room type entity",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoomTypeCategory"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/room-amenity-categories": {
+      "get": {
+        "tags": [
+          "ContentApi"
+        ],
+        "summary": "Receive entity of possible room amenities",
+        "responses": {
+          "200": {
+            "description": "Receive entity of possible room amenities",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoomAmenitiesCategories"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/properties/{propertyId}/extra-stay-rules": {
+      "get": {
+        "tags": [
+          "ExtraStayRules"
+        ],
+        "summary": "Receive early check-in and late check-out rules",
+        "parameters": [
+          {
+            "name": "propertyId",
+            "in": "path",
+            "description": "Property ID",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "1024"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Early check-in and late check-out rules",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ExtraStayRulesResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Address": {
+        "required": [
+          "countryCode"
+        ],
+        "type": "object",
+        "properties": {
+          "postalCode": {
+            "type": "string",
+            "description": "Postcode",
+            "nullable": true,
+            "example": "SW1A 1AA"
+          },
+          "countryCode": {
+            "type": "string",
+            "description": "Country code.<br />\r\nCompliant with ISO 3166-1 Alpha3",
+            "example": "GBR"
+          },
+          "region": {
+            "type": "string",
+            "description": "Region",
+            "nullable": true,
+            "example": "London"
+          },
+          "regionId": {
+            "type": "string",
+            "description": "Region ID",
+            "nullable": true,
+            "example": "020"
+          },
+          "cityName": {
+            "type": "string",
+            "description": "City name",
+            "nullable": true,
+            "example": "London"
+          },
+          "cityId": {
+            "type": "string",
+            "description": "City ID",
+            "nullable": true,
+            "example": "1"
+          },
+          "addressLine": {
+            "type": "string",
+            "description": "Property address including street and house number",
+            "nullable": true,
+            "example": "123 Main St."
+          },
+          "latitude": {
+            "type": "number",
+            "description": "Geographical latitude",
+            "format": "double",
+            "nullable": true,
+            "example": 51.5074
+          },
+          "longitude": {
+            "type": "number",
+            "description": "Geographical longitude",
+            "format": "double",
+            "nullable": true,
+            "example": -0.1278
+          },
+          "remark": {
+            "type": "string",
+            "description": "(Planned) Further information on how to get there",
+            "nullable": true,
+            "example": "Take the second left after the bridge"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Property address"
+      },
+      "Amenity": {
+        "required": [
+          "code"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Amenity code",
+            "example": "wifi_internet"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Room amenities"
+      },
+      "AmenityInfo": {
+        "required": [
+          "code"
+        ],
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Amenity code",
+            "example": "wifi_internet"
+          },
+          "name": {
+            "type": "string",
+            "description": "Amenity name",
+            "nullable": true,
+            "example": "Wi-Fi-internet"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Room amenities"
+      },
+      "ArrivalDatesInfo": {
+        "type": "object",
+        "properties": {
+          "startDate": {
+            "type": "string",
+            "description": "Start date of the rule according to local hotel time.\r\nThe format complies with ISO-8601 YYYY-MM-DD",
+            "format": "date-time",
+            "example": "2025-02-09"
+          },
+          "endDate": {
+            "type": "string",
+            "description": "End date of the rule according to local hotel time.\r\nThe format complies with ISO-8601 YYYY-MM-DD",
+            "format": "date-time",
+            "example": "2025-02-09"
+          },
+          "isEndless": {
+            "type": "boolean",
+            "description": "Indicates that the rule is continuously active starting from StartDate",
+            "example": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BeforeArrivalMatching": {
+        "enum": [
+          "NoMatter",
+          "AtLeast",
+          "NoMoreThan",
+          "Between"
+        ],
+        "type": "string",
+        "description": "Range before arrival:<br />\r\nNoMatter - Not dependent on any specific time;<br />\r\nAtLeast - More than or equal to beforeArrivalValue;<br />\r\nNoMoreThan - Less than beforeArrivalValue;<br />\r\nBetween - Within the period from beforeArrivalValue to beforeArrivalValueMax."
+      },
+      "CancellationRule": {
+        "required": [
+          "id",
+          "propertyId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Cancellation rule Id",
+            "example": "232241"
+          },
+          "propertyId": {
+            "type": "string",
+            "description": "Property ID.",
+            "example": "1024"
+          },
+          "referencePointKind": {
+            "$ref": "#/components/schemas/ReferencePointKind"
+          },
+          "referencePointTime": {
+            "type": "string",
+            "description": "Time when the rule becomes active\r\nTime format complies with ISO-8601 hh:mm",
+            "nullable": true,
+            "example": "15:00"
+          },
+          "cancellationTerms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CancellationTerm"
+            },
+            "description": "Cancellation terms",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CancellationRulesResponse": {
+        "type": "object",
+        "properties": {
+          "cancellationRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CancellationRule"
+            },
+            "description": "Cancellation rules used by any rate plan.",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Cancellation rules for a given property."
+      },
+      "CancellationTerm": {
+        "type": "object",
+        "properties": {
+          "beforeArrivalMatching": {
+            "$ref": "#/components/schemas/BeforeArrivalMatching"
+          },
+          "beforeArrivalUnit": {
+            "$ref": "#/components/schemas/TimeUnit"
+          },
+          "beforeArrivalValue": {
+            "type": "integer",
+            "description": "Number of BeforeArrivalUnits before arrival",
+            "format": "int32",
+            "example": 24
+          },
+          "beforeArrivalValueMax": {
+            "type": "integer",
+            "description": "Upper limit of BeforeArrivalUnit before arrival (used only with BeforeArrivalMatching.Between)",
+            "format": "int32"
+          },
+          "penaltyCalculationMethod": {
+            "$ref": "#/components/schemas/PenaltyCalculationMethod"
+          },
+          "penaltyValue": {
+            "type": "number",
+            "description": "Penalty value",
+            "format": "double",
+            "example": 0
+          },
+          "penaltyValueCurrency": {
+            "type": "string",
+            "description": "Penalty currency",
+            "nullable": true,
+            "example": "RUB"
+          },
+          "arrivalDates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ArrivalDatesInfo"
+            },
+            "description": "Date range when the rule is active",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContactInfo": {
+        "required": [
+          "address"
+        ],
+        "type": "object",
+        "properties": {
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "phones": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Phone"
+            },
+            "description": "(Planned) Property phone numbers",
+            "nullable": true
+          },
+          "emails": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "(Planned) Hotel email addresses",
+            "nullable": true,
+            "example": [
+              "email@example.com"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "description": "Contact details entity of a property"
+      },
+      "EntityState": {
+        "enum": [
+          "Active",
+          "Inactive"
+        ],
+        "type": "string",
+        "description": "EntityState:<br />\r\nInactive - unavailable for sale<br />\r\nActive - available for sale",
+        "example": "Active"
+      },
+      "ExtraServiceSurchargeOption": {
+        "enum": [
+          "None",
+          "All",
+          "MealOnly"
+        ],
+        "type": "string",
+        "description": "Extra services for which a surcharge applies in case of early check-in or late check-out:<br />\r\nNone - No surcharge for extra services;<br />\r\nAll - All extra services are provided for a surcharge;<br />\r\nMealOnly - Only breakfast is provided for a surcharge in case of early check-in. Everything else requires no surcharge."
+      },
+      "ExtraStayChargeRate": {
+        "required": [
+          "currency",
+          "rate"
+        ],
+        "type": "object",
+        "properties": {
+          "currency": {
+            "type": "string",
+            "description": "Charge rate currency."
+          },
+          "rate": {
+            "type": "number",
+            "description": "Charge rate amount.",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Charge rate for early check-in and late check-out rules."
+      },
+      "ExtraStayChargeType": {
+        "enum": [
+          "Free",
+          "Fixed",
+          "Percent",
+          "HourlyRate",
+          "HourlyRateAutoCalculated",
+          "Forbidden"
+        ],
+        "type": "string",
+        "description": "Charge type for early check-in and late check-out rules:<br />\r\nFree - free of charge;<br />\r\nFixed - fixed rate;<br />\r\nPercent - percentage of the daily rate;<br />\r\nHourlyRate - hourly fixed rate;<br />\r\nHourlyRateAutoCalculated - hourly auto-calculated price;<br />\r\nForbidden - no early check-in/late check-out."
+      },
+      "ExtraStayPercentOptions": {
+        "required": [
+          "extraPlacementEnabled",
+          "extraServiceOption",
+          "percentage"
+        ],
+        "type": "object",
+        "properties": {
+          "percentage": {
+            "type": "number",
+            "description": "Percentage of the daily rate charged for early check-in or late check-out.",
+            "format": "double"
+          },
+          "extraPlacementEnabled": {
+            "type": "boolean",
+            "description": "'true' if there is a surcharge for an extra guest; 'false' otherwise."
+          },
+          "extraServiceOption": {
+            "$ref": "#/components/schemas/ExtraServiceSurchargeOption"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Early check-in and late check-out rule options for the Percent charge type."
+      },
+      "ExtraStayRule": {
+        "required": [
+          "checkInTime",
+          "checkOutTime",
+          "earlyCheckInPeriods",
+          "id",
+          "lateCheckOutPeriods",
+          "overridesPropertyCheckInTime",
+          "overridesPropertyCheckOutTime",
+          "propertyId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "An identifier used to reference this rule in rate plans."
+          },
+          "propertyId": {
+            "type": "string",
+            "description": "Property ID.",
+            "example": "1024"
+          },
+          "checkInTime": {
+            "type": "string",
+            "description": "Check-in time for this rule.",
+            "format": "time",
+            "example": "13:00"
+          },
+          "overridesPropertyCheckInTime": {
+            "type": "boolean",
+            "description": "'true' if CheckInTime overrides the property's default check-in time.\r\n'false' if CheckInTime returns the default check-in time."
+          },
+          "earlyCheckInPeriods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExtraStayRulePeriod"
+            },
+            "description": "Early check-in rules for each time period before CheckInTime."
+          },
+          "checkOutTime": {
+            "type": "string",
+            "description": "Check-out time for this rule.",
+            "format": "time",
+            "example": "10:00"
+          },
+          "overridesPropertyCheckOutTime": {
+            "type": "boolean",
+            "description": "'true' if CheckOutTime overrides the property's default check-out time.\r\n'false' if CheckOutTime returns the default check-out time."
+          },
+          "lateCheckOutPeriods": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExtraStayRulePeriod"
+            },
+            "description": "Late check-out rules for each time period after CheckOutTime."
+          }
+        },
+        "additionalProperties": false,
+        "description": "Early check-in and late check-out rule."
+      },
+      "ExtraStayRulePeriod": {
+        "required": [
+          "chargeType",
+          "endTime",
+          "rates",
+          "startTime"
+        ],
+        "type": "object",
+        "properties": {
+          "startTime": {
+            "type": "string",
+            "description": "The start time of this period.\r\nThe time interval includes the start time.\r\nThe first period starts at 00:00.",
+            "format": "time",
+            "example": "09:00"
+          },
+          "endTime": {
+            "type": "string",
+            "description": "The end time of this period.\r\nThe time interval excludes the end time.\r\nThe last period ends at 24:00.",
+            "format": "time",
+            "example": "13:00"
+          },
+          "chargeType": {
+            "$ref": "#/components/schemas/ExtraStayChargeType"
+          },
+          "rates": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExtraStayChargeRate"
+            },
+            "description": "Charge rates for Fixed and HourlyRate charge types."
+          },
+          "percentOptions": {
+            "$ref": "#/components/schemas/ExtraStayPercentOptions"
+          },
+          "occupyQuota": {
+            "type": "boolean",
+            "description": "Indicates whether the quota is guaranteed to be occupied.\r\nIf set to true, the quota is guaranteed to be available.\r\nIf set to false, room availability is not guaranteed, even if the extra stay has been prepaid.",
+            "example": false
+          }
+        },
+        "additionalProperties": false,
+        "description": "Early check-in or late check-out rule for a time period before CheckInTime or after CheckOutTime."
+      },
+      "ExtraStayRulesResponse": {
+        "required": [
+          "extraStayRules"
+        ],
+        "type": "object",
+        "properties": {
+          "extraStayRules": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ExtraStayRule"
+            },
+            "description": "Early check-in and late check-out rules used by any rate plan."
+          }
+        },
+        "additionalProperties": false,
+        "description": "Early check-in and late check-out rules for a given property."
+      },
+      "MealPlan": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Meal plan code",
+            "nullable": true,
+            "example": "AllInclusive"
+          },
+          "name": {
+            "type": "string",
+            "description": "Meal plan name",
+            "nullable": true,
+            "example": "All inclusive"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Meal plan description"
+      },
+      "OccupancyInfo": {
+        "type": "object",
+        "properties": {
+          "adultBed": {
+            "type": "integer",
+            "description": "Guests with main occupancy",
+            "format": "int32"
+          },
+          "extraBed": {
+            "type": "integer",
+            "description": "Extra beds in the room",
+            "format": "int32"
+          },
+          "childWithoutBed": {
+            "type": "integer",
+            "description": "Child accommodation without bed",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Contain information about occupancy"
+      },
+      "PenaltyCalculationMethod": {
+        "enum": [
+          "PrepaymentPercent",
+          "FirstNights",
+          "NoPenalty",
+          "FirstNightPercent",
+          "Percent",
+          "Fixed"
+        ],
+        "type": "string",
+        "description": "Penalty calculation mode:<br />\r\nNoPenalty - No penalty is applied.<br />\r\nFirstNightPercent - The penalty is equal to a specified percentage of the cost of the first night.<br />\r\nPrepaymentPercent - The penalty is equal to a specified percentage of the prepayment amount.<br />\r\nFirstNights - The penalty is equal to the total cost of the first N nights.<br />\r\nPercent - The penalty is equal to the specified percentage of the cost of the reservation (not currently used).<br />\r\nFixed - The penalty is equal to a fixed amount (not currently used)."
+      },
+      "Phone": {
+        "type": "object",
+        "properties": {
+          "phoneNumber": {
+            "type": "string",
+            "description": "Phone number",
+            "nullable": true,
+            "example": "+44 20 1234 5678"
+          },
+          "remark": {
+            "type": "string",
+            "description": "Comments to the phone number",
+            "nullable": true,
+            "example": "Voice Assistant"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Property contact number"
+      },
+      "Placement": {
+        "required": [
+          "count",
+          "kind"
+        ],
+        "type": "object",
+        "properties": {
+          "kind": {
+            "$ref": "#/components/schemas/PlacementKind"
+          },
+          "count": {
+            "type": "integer",
+            "description": "Number of accommodations",
+            "format": "int32",
+            "example": 2
+          },
+          "minAge": {
+            "type": "integer",
+            "description": "Minimum age in the age group<br />\r\nSpecified for child accommodation only\r\n(Kind = Child | ExtraChild | ChildBandWithoutBed)",
+            "format": "int32",
+            "nullable": true,
+            "example": null
+          },
+          "maxAge": {
+            "type": "integer",
+            "description": "Maximum age in the age group<br />\r\nSpecified for child accommodation only<br />\r\n(Kind = Child | ExtraChild | ChildBandWithoutBed)",
+            "format": "int32",
+            "nullable": true,
+            "example": null
+          }
+        },
+        "additionalProperties": false,
+        "description": "Accommodation in a room"
+      },
+      "PlacementKind": {
+        "enum": [
+          "Adult",
+          "ExtraAdult",
+          "Child",
+          "ExtraChild",
+          "ChildBandWithoutBed"
+        ],
+        "type": "string",
+        "description": "Types of accommodations:<br />\r\nAdult - adult with main occupancy<br />\r\nExtraAdult - adult on extra bed<br />\r\nChild - child with main occupancy<br />\r\nExtraChild - child on extra bed<br />\r\nChildBandWithoutBed - child without bed"
+      },
+      "PolicyInfo": {
+        "required": [
+          "checkInTime",
+          "checkOutTime"
+        ],
+        "type": "object",
+        "properties": {
+          "checkInTime": {
+            "type": "string",
+            "description": "Local check-in time at the property.<br />\r\nTome format complies with ISO-8601 hh:mm",
+            "example": "14:00"
+          },
+          "checkOutTime": {
+            "type": "string",
+            "description": "Local check-out time at the property.<br />\r\nTome format complies with ISO-8601 hh:mm",
+            "example": "12:00"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Standard check-in and check-out time"
+      },
+      "PropertyInfoPage": {
+        "required": [
+          "properties"
+        ],
+        "type": "object",
+        "properties": {
+          "next": {
+            "type": "string",
+            "description": "Key, to continue viewing the list.<br />\r\n‘null’, if the current page is the last page",
+            "nullable": true,
+            "example": null
+          },
+          "properties": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PropertyInfoTypeWithInclude"
+            },
+            "description": "List of accommodation properties"
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Warning"
+            },
+            "description": "Warnings",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "List of accommodation properties with details<br />\r\nThe list is split into pages"
+      },
+      "PropertyInfoType": {
+        "required": [
+          "contactInfo",
+          "id",
+          "multiLocationProperty",
+          "name",
+          "policy",
+          "ratePlans",
+          "roomTypes",
+          "services",
+          "timeZone"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Property ID",
+            "example": "1024"
+          },
+          "name": {
+            "type": "string",
+            "description": "Property name",
+            "example": "Test hotel"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of the property",
+            "nullable": true,
+            "example": "Hotel is located in a picturesque location. \n\nThere are 11 hotel rooms of \"Standard\" and \"Standard +\" categories, as well as 4 separate cottages of the \"Duplex\" type for accommodation of guests on the territory of the club."
+          },
+          "currency": {
+            "type": "string",
+            "description": "Property currency",
+            "nullable": true,
+            "example": "GBP"
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Resource"
+            },
+            "description": "Property photo gallery",
+            "nullable": true
+          },
+          "stars": {
+            "type": "integer",
+            "description": "Star rating of the property",
+            "format": "int32",
+            "nullable": true,
+            "example": 4
+          },
+          "stayUnitKind": {
+            "$ref": "#/components/schemas/StayUnitKind"
+          },
+          "contactInfo": {
+            "$ref": "#/components/schemas/ContactInfo"
+          },
+          "policy": {
+            "$ref": "#/components/schemas/PolicyInfo"
+          },
+          "timeZone": {
+            "$ref": "#/components/schemas/TimeZoneInfo"
+          },
+          "ratePlans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RatePlanInfo"
+            },
+            "description": "property rate plans"
+          },
+          "roomTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RoomTypeInfo"
+            },
+            "description": "Room types of the property"
+          },
+          "services": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ServiceInfo"
+            },
+            "description": "List of services provided by the property"
+          },
+          "multiLocationProperty": {
+            "type": "boolean",
+            "description": "The property types are apartments or flats, which may be located at different addresses"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Property detailed description"
+      },
+      "PropertyInfoTypeWithInclude": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Property ID",
+            "example": "1024"
+          },
+          "name": {
+            "type": "string",
+            "description": "Property name",
+            "nullable": true,
+            "example": "Test hotel"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of the property",
+            "nullable": true,
+            "example": "Hotel is located in a picturesque location. \n\nThere are 11 hotel rooms of \"Standard\" and \"Standard +\" categories, as well as 4 separate cottages of the \"Duplex\" type for accommodation of guests on the territory of the club."
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Resource"
+            },
+            "description": "Property photo gallery",
+            "nullable": true
+          },
+          "stars": {
+            "type": "integer",
+            "description": "Star rating of the property",
+            "format": "int32",
+            "nullable": true,
+            "example": 4
+          },
+          "stayUnitKind": {
+            "$ref": "#/components/schemas/StayUnitKind"
+          },
+          "contactInfo": {
+            "$ref": "#/components/schemas/ContactInfo"
+          },
+          "policy": {
+            "$ref": "#/components/schemas/PolicyInfo"
+          },
+          "timeZone": {
+            "$ref": "#/components/schemas/TimeZoneInfo"
+          },
+          "ratePlans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RatePlanInfo"
+            },
+            "description": "Property rate plans",
+            "nullable": true
+          },
+          "roomTypes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RoomTypeInfo"
+            },
+            "description": "Room types of the property",
+            "nullable": true
+          },
+          "services": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ServiceInfo"
+            },
+            "description": "List of services provided by the property",
+            "nullable": true
+          },
+          "multiLocationProperty": {
+            "type": "boolean",
+            "description": "The property types are apartments or flats, which may be located at different addresses",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Information on the accommodation property<br />\r\nThe Id field is always filled in, other fields - in case of parameter ‘include=all’"
+      },
+      "RatePlanInfo": {
+        "required": [
+          "cancellationRuleId",
+          "currency",
+          "id",
+          "isStayWithChildrenOnly",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Rate plan ID",
+            "example": "133528"
+          },
+          "name": {
+            "type": "string",
+            "description": "Rate plan name",
+            "example": "Main rate plan"
+          },
+          "description": {
+            "type": "string",
+            "description": "Rate plan description, may contain HTML tags",
+            "nullable": true,
+            "example": "<p>Book your accommodation at the best price!</p>\n<p>The accommodation price includes: </p>\n<p>- Free secure parking on site</p>\n<p>- High-speed wireless Internet</p>\n<p>- Playground on site</p>"
+          },
+          "currency": {
+            "type": "string",
+            "description": "(Planned) Rate plan currency",
+            "example": "GBP"
+          },
+          "isStayWithChildrenOnly": {
+            "type": "boolean",
+            "description": "Stay available with children only",
+            "example": false
+          },
+          "cancellationRuleId": {
+            "type": "string",
+            "description": "Cancellation rule ID",
+            "example": "56454"
+          },
+          "extraStayRuleId": {
+            "type": "string",
+            "description": "Early check-in and late check-out rule ID.<br />\r\nNull if rate plan does not allow additional accommodation.",
+            "nullable": true,
+            "example": "202584"
+          },
+          "vat": {
+            "$ref": "#/components/schemas/Vat"
+          }
+        },
+        "additionalProperties": false,
+        "description": "The rate plan of the accommodation property"
+      },
+      "ReferencePointKind": {
+        "enum": [
+          "ProviderArrivalTime",
+          "ProviderDepartureTime",
+          "GuestArrivalTime",
+          "CustomArrivalTime",
+          "BookingCreationTime"
+        ],
+        "type": "string",
+        "description": "Time reference point for the rule:<br />\r\nProviderArrivalTime - \"Hotel check-in time.\"<br />\r\nProviderDepartureTime - \"Hotel check-out time\" - The countdown starts from the check-out time on the day of arrival.<br />\r\nGuestArrivalTime - \"Guest-specified check-in time\" - The countdown starts from the check-in time specified by the guest.<br />\r\nCustomArrivalTime - \"Specified time\" - The countdown starts from the time specified in the cancellation rule.<br />\r\nBookingCreationTime - \"Booking time\" - The countdown starts from the time the guest made the booking."
+      },
+      "Resource": {
+        "required": [
+          "url"
+        ],
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "description": "Resource link"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Resource information"
+      },
+      "RoomAmenitiesCategories": {
+        "required": [
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Category name",
+            "example": "Internet/telephony"
+          },
+          "amenities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AmenityInfo"
+            },
+            "description": "Amenities included in the category",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false,
+        "description": "Room amenities category"
+      },
+      "RoomTypeCategory": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Code",
+            "nullable": true,
+            "example": "PlaceInRoom"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "nullable": true,
+            "example": "place in the room"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Room type entity"
+      },
+      "RoomTypeInfo": {
+        "required": [
+          "categoryCode",
+          "categoryName",
+          "id",
+          "name",
+          "placements"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Room type ID",
+            "example": "82751"
+          },
+          "name": {
+            "type": "string",
+            "description": "Name",
+            "example": "Standard"
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description",
+            "nullable": true,
+            "example": "Each room (25 m2) style combines elegant classics with modern decorative elements and a high level of comfort. Standard rooms can accommodate 2 people on two twin one-and-a-half beds (120*200). A third guest can be accommodated on an extra folding bed. Cots are provided for small children. Among amenities of each room: - High-speed WiFi, LCD TV with a wide choice of cable channels and the option to watch movies online - Spacious bathrooms with walk-in and rain shower; - Cosmetics and toiletries, bathrobes and slippers - High quality bed linen - Balcony with comfortable furniture, views of the Gulf of Finland and the islands."
+          },
+          "amenities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Amenity"
+            },
+            "description": "Room amenities",
+            "nullable": true
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Resource"
+            },
+            "description": "Room images",
+            "nullable": true
+          },
+          "size": {
+            "$ref": "#/components/schemas/RoomTypeSquare"
+          },
+          "categoryCode": {
+            "type": "string",
+            "description": "Category code",
+            "example": "PlaceInRoom"
+          },
+          "categoryName": {
+            "type": "string",
+            "description": "Category name",
+            "example": "Place in the room"
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          },
+          "occupancy": {
+            "$ref": "#/components/schemas/OccupancyInfo"
+          },
+          "placements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Placement"
+            },
+            "description": "Accommodations entity"
+          },
+          "position": {
+            "type": "integer",
+            "description": "Order in output",
+            "format": "int32",
+            "nullable": true,
+            "example": 100
+          }
+        },
+        "additionalProperties": false,
+        "description": "Room type info"
+      },
+      "RoomTypeSquare": {
+        "required": [
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "integer",
+            "description": "Area, value in square meters",
+            "format": "int32",
+            "example": 25
+          }
+        },
+        "additionalProperties": false,
+        "description": "Room area"
+      },
+      "ServiceInfo": {
+        "required": [
+          "id",
+          "kind",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Service ID",
+            "example": "42807"
+          },
+          "name": {
+            "type": "string",
+            "description": "Service name",
+            "example": "Christmas tree"
+          },
+          "description": {
+            "type": "string",
+            "description": "Service description",
+            "nullable": true,
+            "example": "Children's New Year party"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/ServiceKind"
+          },
+          "mealPlanCode": {
+            "type": "string",
+            "description": "Meal plan code. Specified in case the service type is ‘Meal’ (Kind = Meal)",
+            "nullable": true,
+            "example": null
+          },
+          "mealPlanName": {
+            "type": "string",
+            "description": "Meal plan name. Specified in case the service type is ‘Meal’ (Kind = Meal)",
+            "nullable": true,
+            "example": null
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Resource"
+            },
+            "description": "Array of images of the service provided",
+            "nullable": true
+          },
+          "status": {
+            "$ref": "#/components/schemas/EntityState"
+          },
+          "vat": {
+            "$ref": "#/components/schemas/Vat"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Description of the service provided by the property<br />\r\nIf ‘kind’=Meal, the meal plan code is specified in mealPlanCode field, otherwise mealPlanCode=null"
+      },
+      "ServiceKind": {
+        "enum": [
+          "Common",
+          "Meal"
+        ],
+        "type": "string",
+        "description": "Service type:<br />\r\nCommon - common service<br />\r\nMeal - meal service",
+        "example": "Common"
+      },
+      "StayUnitKind": {
+        "enum": [
+          "NightRate",
+          "DailyRate"
+        ],
+        "type": "string",
+        "description": "Type of accommodation unit ‘nights’ or ‘days’"
+      },
+      "TimeUnit": {
+        "enum": [
+          "None",
+          "Day",
+          "Hour"
+        ],
+        "type": "string",
+        "description": "Timeframes when a penalty can be set.\r\nNone used only with BeforeArrivalMatching.NoMatter."
+      },
+      "TimeZoneInfo": {
+        "required": [
+          "id"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Time zone ID.<br />\r\ncorresponds to IANA Time Zones ID",
+            "example": "Europe/London"
+          }
+        },
+        "additionalProperties": false,
+        "description": "Property time zone"
+      },
+      "Vat": {
+        "required": [
+          "applicable"
+        ],
+        "type": "object",
+        "properties": {
+          "applicable": {
+            "type": "boolean",
+            "description": "Is VAT payable<br />\r\nIf false - VAT is not payable, so Included and Percent are not specified",
+            "example": true
+          },
+          "included": {
+            "type": "boolean",
+            "description": "Is VAT included in TotalPrice",
+            "nullable": true,
+            "example": true
+          },
+          "percent": {
+            "type": "integer",
+            "description": "Percentage",
+            "format": "int32",
+            "nullable": true,
+            "example": 20
+          }
+        },
+        "additionalProperties": false
+      },
+      "Warning": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "nullable": true,
+            "example": "NotEnoughRights"
+          },
+          "message": {
+            "type": "string",
+            "nullable": true,
+            "example": "Not enough rights to hotel"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "ApiKey": {
+        "type": "apiKey",
+        "name": "X-API-KEY",
+        "in": "header"
+      },
+      "oAuth2": {
+        "type": "oauth2",
+        "flows": {
+          "clientCredentials": {
+            "tokenUrl": "https://partner.qatl.ru/auth/token",
+            "scopes": { }
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiKey": [ ],
+      "oAuth2": [ ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+    {
+        "code": "Room",
+        "name": "Номер"
+    },
+    {
+        "code": "PlaceInRoom",
+        "name": "Место в номере"
+    },
+    {
+        "code": "Villa",
+        "name": "Вилла"
+    },
+    {
+        "code": "Apartments",
+        "name": "Аппартаменты"
+    },
+    {
+        "code": "Studio",
+        "name": "Студия"
+    },
+    {
+        "code": "Cottage",
+        "name": "Коттедж"
+    },
+    {
+        "code": "Flat",
+        "name": "Квартира"
+    },
+    {
+        "code": "House",
+        "name": "Дом"
+    },
+    {
+        "code": "SmallHouse",
+        "name": "Домик"
+    },
+    {
+        "code": "AFrameHouse",
+        "name": "А-фрейм"
+    },
+    {
+        "code": "BarnHouse",
+        "name": "Барнхаус"
+    },
+    {
+        "code": "BellTent",
+        "name": "Белл-тент"
+    },
+    {
+        "code": "Bungalow",
+        "name": "Бунгало"
+    },
+    {
+        "code": "Houseboat",
+        "name": "Дом на воде"
+    },
+    {
+        "code": "Motorhome",
+        "name": "Дом на колесах"
+    },
+    {
+        "code": "IndianTipi",
+        "name": "Индейский типи"
+    },
+    {
+        "code": "CampHouse",
+        "name": "Кемп"
+    },
+    {
+        "code": "Camping",
+        "name": "Кемпинг"
+    },
+    {
+        "code": "DomeTent",
+        "name": "Купольный шатер"
+    },
+    {
+        "code": "Campsite",
+        "name": "Место под палатку"
+    },
+    {
+        "code": "Tent",
+        "name": "Палатка"
+    },
+    {
+        "code": "FloatingHome",
+        "name": "Плавучий дом"
+    },
+    {
+        "code": "SafariTent",
+        "name": "Сафари-тент"
+    },
+    {
+        "code": "FoldingTent",
+        "name": "Тент"
+    },
+    {
+        "code": "TentHouse",
+        "name": "Тент-хаус"
+    },
+    {
+        "code": "Hut",
+        "name": "Шалаш"
+    },
+    {
+        "code": "Chalet",
+        "name": "Шале"
+    },
+    {
+        "code": "Pavilion",
+        "name": "Шатер"
+    },
+    {
+        "code": "EcoHouse",
+        "name": "Эко-дом"
+    },
+    {
+        "code": "Yurt",
+        "name": "Юрта"
+    }
+]
