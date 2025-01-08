@@ -40,12 +40,6 @@
       "type": "media",
       "multiple": false
     },
-    "travelline": {
-      "displayName": "travelline",
-      "type": "component",
-      "repeatable": false,
-      "component": "integration.travelline"
-    },
     "description": {
       "type": "richtext",
       "pluginOptions": {
@@ -90,6 +84,12 @@
       "type": "component",
       "component": "hotel.room-category",
       "repeatable": true
+    },
+    "travelline": {
+      "displayName": "travelline",
+      "type": "component",
+      "repeatable": false,
+      "component": "hotel.travelline"
     }
   }
 }

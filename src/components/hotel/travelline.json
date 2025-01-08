@@ -1,0 +1,47 @@
+{
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "propertyId": {
+      "type": "string"
+    },
+    "apiKey": {
+      "type": "string",
+      "private": true
+    },
+    "lastSync": {
+      "type": "datetime"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "mappings": {
+      "type": "json"
+    },
+    "roomCategories": {
+      "type": "component",
+      "component": "hotel.room-category",
+      "repeatable": true
+    },
+    "contactInfo": {
+      "type": "component",
+      "component": "hotel.contact-info"
+    },
+    "policy": {
+      "type": "component",
+      "component": "hotel.policy"
+    },
+    "ratePlans": {
+      "type": "component",
+      "component": "hotel.rate-plan",
+      "repeatable": true
+    }
+  },
+  "collectionName": "components_hotel_travelline",
+  "info": {
+    "displayName": "TravelLine Данные",
+    "icon": "link"
+  }
+}
