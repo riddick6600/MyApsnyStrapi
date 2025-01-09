@@ -1,9 +1,9 @@
 {
   "attributes": {
-    "number": {
+    "phoneNumber": {
       "type": "string"
     },
-    "type": {
+    "techType": {
       "type": "enumeration",
       "enum": [
         "mobile",
@@ -11,13 +11,9 @@
         "fax",
         "whatsapp"
       ],
-      "default": "mobile"
+      "default": "whatsapp"
     },
-    "primary": {
-      "type": "boolean",
-      "default": false
-    },
-    "comment": {
+    "remark": {
       "type": "string"
     }
   },

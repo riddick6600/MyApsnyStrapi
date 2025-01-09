@@ -1,17 +1,24 @@
 {
   "attributes": {
-    "country": {
+    "postalCode": {
       "type": "string"
     },
     "countryCode": {
-      "type": "string",
-      "minLength": 2,
-      "maxLength": 2
+      "type": "string"
     },
     "region": {
       "type": "string"
     },
-    "city": {
+    "regionId": {
+      "type": "string"
+    },
+    "cityName": {
+      "type": "string"
+    },
+    "cityId": {
+      "type": "string"
+    },
+    "addressLine": {
       "type": "string"
     },
     "street": {
@@ -23,12 +30,15 @@
     "apartment": {
       "type": "string"
     },
-    "postalCode": {
-      "type": "string"
-    },
     "coordinates": {
       "type": "component",
       "component": "common.coordinates"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "string"
     }
   },
   "collectionName": "components_common_address",

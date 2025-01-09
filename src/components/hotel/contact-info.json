@@ -7,8 +7,7 @@
     "phones": {
       "type": "component",
       "component": "common.phone",
-      "repeatable": true,
-      "min": 1
+      "repeatable": true
     },
     "emails": {
       "type": "email",

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_hotel_vat",
+  "info": {
+    "displayName": "Налоги",
+    "icon": "dollar-sign",
+    "description": "Налоги Отеля"
+  },
+  "attributes": {
+    "applicable": {
+      "type": "boolean",
+      "default": false
+    },
+    "included": {
+      "type": "boolean",
+      "default": false
+    },
+    "percent": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,7 +1,48 @@
 {
   "attributes": {
+    "externalId": {
+      "type": "string"
+    },
     "name": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "amenities": {
+      "type": "component",
+      "component": "hotel.amenity",
+      "repeatable": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "size": {
+      "type": "component",
+      "component": "hotel.size"
+    },
+    "categoryCode": {
+      "type": "string"
+    },
+    "categoryName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "component": "common.address"
+    },
+    "occupancy": {
+      "type": "component",
+      "component": "hotel.occupancy"
+    },
+    "placements": {
+      "type": "component",
+      "component": "hotel.placement",
+      "repeatable": true
     },
     "categoryType": {
       "type": "enumeration",
@@ -13,13 +54,6 @@
         "Cottage",
         "Hostel"
       ]
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "size": {
-      "type": "decimal",
-      "min": 0
     },
     "maxAdults": {
       "type": "integer",
@@ -43,11 +77,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "amenities": {
-      "type": "component",
-      "component": "hotel.amenity",
-      "repeatable": true
     },
     "beds": {
       "type": "component",

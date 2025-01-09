@@ -1,0 +1,15 @@
+{
+  "attributes": {
+    "value": {
+      "type": "integer"
+    },
+    "unit": {
+      "type": "string"
+    }
+  },
+  "collectionName": "components_hotel_size",
+  "info": {
+    "displayName": "Размер",
+    "icon": "size"
+  }
+}

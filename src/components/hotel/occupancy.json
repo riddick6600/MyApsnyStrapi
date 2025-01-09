@@ -1,0 +1,18 @@
+{
+  "attributes": {
+    "adultBed": {
+      "type": "integer"
+    },
+    "extraBed": {
+      "type": "integer"
+    },
+    "childWithoutBed": {
+      "type": "integer"
+    }
+  },
+  "collectionName": "components_hotel_occupancy",
+  "info": {
+    "displayName": "Вместимость",
+    "icon": "size"
+  }
+}

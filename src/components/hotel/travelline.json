@@ -1,11 +1,56 @@
 {
+  "collectionName": "components_hotel_travelline",
+  "info": {
+    "displayName": "TravelLine Данные Отеля",
+    "icon": "gate",
+    "description": ""
+  },
   "attributes": {
-    "enabled": {
-      "type": "boolean",
-      "default": false
-    },
     "propertyId": {
       "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "stayUnitKind": {
+      "type": "enumeration",
+      "enum": [
+        "NightRate",
+        "DailyRate"
+      ],
+      "default": "NightRate"
+    },
+    "contactInfo": {
+      "type": "component",
+      "component": "hotel.contact-info"
+    },
+    "policy": {
+      "type": "component",
+      "component": "hotel.policy"
+    },
+    "timeZone": {
+      "type": "string"
+    },
+    "ratePlans": {
+      "type": "component",
+      "component": "hotel.rate-plan",
+      "repeatable": true
+    },
+    "roomTypes": {
+      "type": "component",
+      "component": "hotel.room-category",
+      "repeatable": true
     },
     "apiKey": {
       "type": "string",
@@ -19,29 +64,6 @@
     },
     "mappings": {
       "type": "json"
-    },
-    "roomCategories": {
-      "type": "component",
-      "component": "hotel.room-category",
-      "repeatable": true
-    },
-    "contactInfo": {
-      "type": "component",
-      "component": "hotel.contact-info"
-    },
-    "policy": {
-      "type": "component",
-      "component": "hotel.policy"
-    },
-    "ratePlans": {
-      "type": "component",
-      "component": "hotel.rate-plan",
-      "repeatable": true
     }
-  },
-  "collectionName": "components_hotel_travelline",
-  "info": {
-    "displayName": "TravelLine Данные",
-    "icon": "link"
   }
 }

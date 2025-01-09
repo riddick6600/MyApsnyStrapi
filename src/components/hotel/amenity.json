@@ -3,6 +3,9 @@
     "name": {
       "type": "string"
     },
+    "code": {
+      "type": "string"
+    },
     "category": {
       "type": "enumeration",
       "enum": [

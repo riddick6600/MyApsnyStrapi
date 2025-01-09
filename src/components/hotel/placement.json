@@ -1,0 +1,30 @@
+{
+  "attributes": {
+    "kind": {
+      "type": "enumeration",
+      "enum": [
+        "Adult",
+        "ExtraAdult",
+        "Child",
+        "ExtraChild",
+        "ChildBandWithoutBed",
+        "internet",
+        "other"
+      ]
+    },
+    "count": {
+      "type": "integer"
+    },
+    "minAge": {
+      "type": "integer"
+    },
+    "maxAge": {
+      "type": "integer"
+    }
+  },
+  "collectionName": "components_hotel_placement",
+  "info": {
+    "displayName": "Размещение",
+    "icon": "size"
+  }
+}

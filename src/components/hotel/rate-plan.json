@@ -6,6 +6,9 @@
     "description": "Тарифный план отеля"
   },
   "attributes": {
+    "externalId": {
+      "type": "string"
+    },
     "name": {
       "type": "string"
     },
@@ -13,7 +16,8 @@
       "type": "text"
     },
     "currency": {
-      "type": "string"
+      "type": "string",
+      "default": "RUB"
     },
     "basePrice": {
       "type": "decimal",
@@ -30,10 +34,8 @@
       "type": "string"
     },
     "vat": {
-      "type": "string"
-    },
-    "conditions": {
-      "type": "json"
+      "type": "component",
+      "component": "hotel.vat"
     }
   }
 }
