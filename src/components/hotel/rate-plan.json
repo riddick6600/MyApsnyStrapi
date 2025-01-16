@@ -6,10 +6,10 @@
     "description": "Тарифный план отеля"
   },
   "attributes": {
-    "externalId": {
+    "name": {
       "type": "string"
     },
-    "name": {
+    "externalId": {
       "type": "string"
     },
     "description": {
@@ -18,10 +18,6 @@
     "currency": {
       "type": "string",
       "default": "RUB"
-    },
-    "basePrice": {
-      "type": "decimal",
-      "min": 0
     },
     "isStayWithChildrenOnly": {
       "type": "boolean",

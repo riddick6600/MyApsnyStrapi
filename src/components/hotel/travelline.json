@@ -6,14 +6,14 @@
     "description": ""
   },
   "attributes": {
-    "propertyId": {
+    "externalId": {
       "type": "string"
     },
     "name": {
       "type": "string"
     },
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "images": {
       "type": "media",
@@ -49,21 +49,17 @@
     },
     "roomTypes": {
       "type": "component",
-      "component": "hotel.room-category",
+      "component": "hotel.room-type",
       "repeatable": true
     },
-    "apiKey": {
-      "type": "string",
-      "private": true
+    "services": {
+      "type": "component",
+      "component": "hotel.service",
+      "repeatable": true
     },
-    "lastSync": {
-      "type": "datetime"
-    },
-    "settings": {
-      "type": "json"
-    },
-    "mappings": {
-      "type": "json"
+    "multiLocationProperty": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

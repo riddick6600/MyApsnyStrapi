@@ -1,0 +1,7 @@
+{
+    "Отели": "Отели",
+    "seo.plugin.name": "SEO Плагин",
+    "cloud.plugin.name": "Облако Плагин",
+    "content-manager.plugin.name": "Контент Менеджер",
+    "content-manager.content-types.api::hotel.hotel.page": "Данные страницы"
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_hotel_address",
+  "info": {
+    "displayName": "Адрес",
+    "icon": "map",
+    "description": ""
+  },
+  "attributes": {
+    "postalCode": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "regionId": {
+      "type": "string"
+    },
+    "cityName": {
+      "type": "string"
+    },
+    "cityId": {
+      "type": "string"
+    },
+    "addressLine": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "float",
+      "min": -90,
+      "max": 90
+    },
+    "longitude": {
+      "type": "float",
+      "min": -180,
+      "max": 180
+    },
+    "remark": {
+      "type": "string"
+    }
+  }
+}

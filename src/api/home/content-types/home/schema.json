@@ -20,20 +20,25 @@
       "repeatable": false,
       "component": "page.page"
     },
-    "firsttitle": {
-      "type": "string"
-    },
     "first": {
       "type": "dynamiczone",
-      "components": ["components.place-card", "components.home-block"]
+      "components": [
+        "components.place-card",
+        "components.home-block"
+      ]
     },
     "second": {
       "type": "dynamiczone",
-      "components": ["components.place-card"]
+      "components": [
+        "components.place-card"
+      ]
     },
     "third": {
       "type": "dynamiczone",
-      "components": ["components.place-card", "components.home-block"]
+      "components": [
+        "components.place-card",
+        "components.home-block"
+      ]
     }
   }
 }

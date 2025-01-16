@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_hotel_service",
+  "info": {
+    "displayName": "Услуги",
+    "icon": "dollar",
+    "description": ""
+  },
+  "attributes": {
+    "externalId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "kind": {
+      "type": "enumeration",
+      "enum": [
+        "",
+        "Common",
+        "Meal"
+      ]
+    },
+    "mealPlanCode": {
+      "type": "string"
+    },
+    "mealPlanName": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "externalStatus": {
+      "type": "string"
+    },
+    "vat": {
+      "type": "component",
+      "component": "hotel.vat"
+    }
+  }
+}

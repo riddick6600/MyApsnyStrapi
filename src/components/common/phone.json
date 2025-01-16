@@ -6,10 +6,15 @@
     "techType": {
       "type": "enumeration",
       "enum": [
+        "",
         "mobile",
+        "Mobile",
         "landline",
+        "Landline",
         "fax",
-        "whatsapp"
+        "Fax",
+        "whatsapp",
+        "Whatsapp"
       ],
       "default": "whatsapp"
     },

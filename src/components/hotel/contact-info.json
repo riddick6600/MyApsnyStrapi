@@ -2,7 +2,7 @@
   "attributes": {
     "address": {
       "type": "component",
-      "component": "common.address"
+      "component": "hotel.address"
     },
     "phones": {
       "type": "component",
@@ -10,8 +10,7 @@
       "repeatable": true
     },
     "emails": {
-      "type": "email",
-      "repeatable": true
+      "type": "string"
     },
     "website": {
       "type": "string"

@@ -4,21 +4,31 @@
   "info": {
     "singularName": "hotel",
     "pluralName": "hotels",
-    "displayName": "Отель",
-    "description": "Отели"
-  },
-  "options": {
-    "draftAndPublish": true
-  },
-  "pluginOptions": {
-    "i18n": {
-      "localized": true
-    }
+    "displayName": "Отели",
+    "description": "Управление Отелями"
   },
   "attributes": {
     "name": {
       "type": "string",
-      "unique": true
+      "label": "test"
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "stars": {
+      "type": "integer",
+      "min": 0,
+      "max": 5
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
     },
     "place": {
       "type": "relation",
@@ -29,65 +39,6 @@
       "type": "component",
       "repeatable": false,
       "component": "page.page"
-    },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "images": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": true
-    },
-    "description": {
-      "type": "richtext",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "stars": {
-      "type": "integer",
-      "min": 0,
-      "max": 5
-    },
-    "mainImage": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "gallery": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "contactInfo": {
-      "type": "component",
-      "component": "hotel.contact-info"
-    },
-    "policy": {
-      "type": "component",
-      "component": "hotel.policy"
-    },
-    "ratePlans": {
-      "type": "component",
-      "component": "hotel.rate-plan",
-      "repeatable": true
-    },
-    "roomCategories": {
-      "type": "component",
-      "component": "hotel.room-category",
-      "repeatable": true
     },
     "travelline": {
       "displayName": "travelline",

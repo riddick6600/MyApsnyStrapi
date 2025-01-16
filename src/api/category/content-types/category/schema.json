@@ -4,7 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "Категории статей",
+    "displayName": "Категории Блога",
     "description": "Organize your content into categories"
   },
   "options": {

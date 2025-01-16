@@ -5,7 +5,7 @@ export default () => ({
     config: {
       openapi: "3.0.0",
       info: {
-        version: "1.0.0",
+        version: "1.0.1",
         title: "MyApsny API данных сайта",
         description: "Сервис хранения данных для сайта myapsny.ru",
         termsOfService: null,
@@ -13,14 +13,15 @@ export default () => ({
           name: "MyApsny",
           email: null,
           // email: "riddick6600@mail.ru",
-          url: null,
+          url: "https://new.myapsny.ru",
         },
         license: null,
       },
       "x-strapi-config": {
         // Leave empty to ignore plugins during generation
-        plugins: ["upload", "users-permissions"],
-        path: "/documentation",
+        // plugins: ["upload", "users-permissions"],
+        plugins: ["upload"],
+        path: "/documentation/",
       },
       servers: [
         { url: "http://localhost:1337/api", description: "Development server" },
