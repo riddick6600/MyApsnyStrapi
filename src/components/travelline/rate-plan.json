@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_hotel_rate_plan",
+  "collectionName": "components_travelline_rate_plan",
   "info": {
     "displayName": "Тарифный план",
     "icon": "dollar-sign",
@@ -31,7 +31,7 @@
     },
     "vat": {
       "type": "component",
-      "component": "hotel.vat"
+      "component": "travelline.vat"
     }
   }
 }

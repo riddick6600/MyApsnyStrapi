@@ -10,7 +10,7 @@
       "type": "integer"
     }
   },
-  "collectionName": "components_hotel_occupancy",
+  "collectionName": "components_travelline_occupancy",
   "info": {
     "displayName": "Вместимость",
     "icon": "size"

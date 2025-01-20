@@ -17,7 +17,7 @@
       "type": "json"
     }
   },
-  "collectionName": "components_hotel_price",
+  "collectionName": "components_travelline_price",
   "info": {
     "displayName": "Цена",
     "icon": "dollar"

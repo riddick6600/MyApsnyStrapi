@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_hotel_service",
+  "collectionName": "components_travelline_service",
   "info": {
     "displayName": "Услуги",
     "icon": "dollar",
@@ -42,7 +42,7 @@
     },
     "vat": {
       "type": "component",
-      "component": "hotel.vat"
+      "component": "travelline.vat"
     }
   }
 }

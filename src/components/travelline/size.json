@@ -7,7 +7,7 @@
       "type": "string"
     }
   },
-  "collectionName": "components_hotel_size",
+  "collectionName": "components_travelline_size",
   "info": {
     "displayName": "Размер",
     "icon": "size"

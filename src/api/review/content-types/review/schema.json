@@ -1,4 +1,15 @@
 {
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Отзыв",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
   "attributes": {
     "title": {
       "type": "string"
@@ -24,15 +35,5 @@
     "response": {
       "type": "string"
     }
-  },
-  "kind": "collectionType",
-  "collectionName": "reviews",
-  "info": {
-    "singularName": "review",
-    "pluralName": "reviews",
-    "displayName": "Отзыв"
-  },
-  "options": {
-    "draftAndPublish": true
   }
 }

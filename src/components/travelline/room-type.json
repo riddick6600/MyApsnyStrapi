@@ -11,7 +11,7 @@
     },
     "amenities": {
       "type": "component",
-      "component": "hotel.amenity",
+      "component": "travelline.amenity",
       "repeatable": true
     },
     "images": {
@@ -23,7 +23,7 @@
     },
     "size": {
       "type": "component",
-      "component": "hotel.size"
+      "component": "travelline.size"
     },
     "categoryCode": {
       "type": "string"
@@ -33,22 +33,22 @@
     },
     "address": {
       "type": "component",
-      "component": "hotel.address"
+      "component": "travelline.address"
     },
     "occupancy": {
       "type": "component",
-      "component": "hotel.occupancy"
+      "component": "travelline.occupancy"
     },
     "placements": {
       "type": "component",
-      "component": "hotel.placement",
+      "component": "travelline.placement",
       "repeatable": true
     },
     "position": {
       "type": "integer"
     }
   },
-  "collectionName": "components_hotel_room_type",
+  "collectionName": "components_travelline_room_type",
   "info": {
     "displayName": "Категория номера",
     "icon": "bed"

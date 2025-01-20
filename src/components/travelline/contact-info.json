@@ -2,7 +2,7 @@
   "attributes": {
     "address": {
       "type": "component",
-      "component": "hotel.address"
+      "component": "travelline.address"
     },
     "phones": {
       "type": "component",
@@ -16,7 +16,7 @@
       "type": "string"
     }
   },
-  "collectionName": "components_hotel_contact_info",
+  "collectionName": "components_travelline_contact_info",
   "info": {
     "displayName": "Контактная информация",
     "icon": "phone",

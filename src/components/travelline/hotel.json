@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_hotel_travelline",
+  "collectionName": "components_travelline_travelline",
   "info": {
     "displayName": "TravelLine Данные Отеля",
     "icon": "gate",
@@ -33,28 +33,28 @@
     },
     "contactInfo": {
       "type": "component",
-      "component": "hotel.contact-info"
+      "component": "travelline.contact-info"
     },
     "policy": {
       "type": "component",
-      "component": "hotel.policy"
+      "component": "travelline.policy"
     },
     "timeZone": {
       "type": "string"
     },
     "ratePlans": {
       "type": "component",
-      "component": "hotel.rate-plan",
+      "component": "travelline.rate-plan",
       "repeatable": true
     },
     "roomTypes": {
       "type": "component",
-      "component": "hotel.room-type",
+      "component": "travelline.room-type",
       "repeatable": true
     },
     "services": {
       "type": "component",
-      "component": "hotel.service",
+      "component": "travelline.service",
       "repeatable": true
     },
     "multiLocationProperty": {

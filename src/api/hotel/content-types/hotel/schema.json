@@ -47,7 +47,7 @@
       "displayName": "travelline",
       "type": "component",
       "repeatable": false,
-      "component": "hotel.travelline"
+      "component": "travelline.hotel"
     }
   }
 }

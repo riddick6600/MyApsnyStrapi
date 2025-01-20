@@ -25,7 +25,7 @@
       "type": "string"
     }
   },
-  "collectionName": "components_hotel_amenity",
+  "collectionName": "components_travelline_amenity",
   "info": {
     "displayName": "Удобство",
     "icon": "star"
