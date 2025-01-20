@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "hoteltypes",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "Страницы",
+    "singularName": "hoteltype",
+    "pluralName": "hoteltypes",
+    "displayName": "Типы жилья",
     "description": ""
   },
   "options": {
@@ -14,10 +14,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "page": {
-      "type": "component",
-      "component": "page.page"
     }
   }
 }

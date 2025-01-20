@@ -6,7 +6,7 @@
     },
     "phones": {
       "type": "component",
-      "component": "common.phone",
+      "component": "travelline.phone",
       "repeatable": true
     },
     "emails": {

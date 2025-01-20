@@ -8,12 +8,12 @@
       "enum": [
         "",
         "mobile",
-        "Mobile",
         "landline",
-        "Landline",
         "fax",
-        "Fax",
         "whatsapp",
+        "Mobile",
+        "Landline",
+        "Fax",
         "Whatsapp"
       ],
       "default": "whatsapp"
@@ -22,7 +22,7 @@
       "type": "string"
     }
   },
-  "collectionName": "components_common_phone",
+  "collectionName": "components_travelline_phone",
   "info": {
     "displayName": "Телефон",
     "icon": "phone"

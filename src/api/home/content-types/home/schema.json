@@ -17,7 +17,6 @@
     },
     "page": {
       "type": "component",
-      "repeatable": false,
       "component": "page.page"
     },
     "first": {

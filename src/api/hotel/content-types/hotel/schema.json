@@ -7,16 +7,15 @@
     "displayName": "Отели",
     "description": "Управление Отелями"
   },
+  "options": {
+    "draftAndPublish": false
+  },
   "attributes": {
     "name": {
-      "type": "string",
-      "label": "test"
-    },
-    "externalId": {
       "type": "string"
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     },
     "content": {
       "type": "richtext"
@@ -27,11 +26,12 @@
       "max": 5
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "place": {
       "type": "relation",
@@ -40,14 +40,62 @@
     },
     "page": {
       "type": "component",
-      "repeatable": false,
       "component": "page.page"
     },
     "travelline": {
       "displayName": "travelline",
       "type": "component",
-      "repeatable": false,
       "component": "travelline.hotel"
+    },
+    "typeOfAccommodation": {
+      "type": "string"
+    },
+    "location": {
+      "type": "component",
+      "component": "travelline.address"
+    },
+    "distanceToSea": {
+      "type": "integer"
+    },
+    "distanceToCenter": {
+      "type": "integer"
+    },
+    "amenities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "travelline.amenity"
+    },
+    "policy": {
+      "type": "component",
+      "component": "travelline.policy"
+    },
+    "numberOfRooms": {
+      "type": "integer"
+    },
+    "yearOfConstruction": {
+      "type": "integer"
+    },
+    "paymentAndBooking": {
+      "label": "Оплата и бронирование",
+      "type": "string"
+    },
+    "faq": {
+      "label": "Часто задаваемые вопросы",
+      "type": "string",
+      "repeatable": true
+    },
+    "roomTypes": {
+      "type": "component",
+      "component": "travelline.room-type",
+      "repeatable": true
+    },
+    "hotelType": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hoteltype.hoteltype"
+    },
+    "isActive": {
+      "type": "boolean"
     }
   }
 }
