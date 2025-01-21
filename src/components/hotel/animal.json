@@ -1,23 +1,23 @@
 {
-  "attributes": {
-    "isAllowed": {
-      "type": "boolean"
+    "attributes": {
+        "isAllowed": {
+            "type": "boolean"
+        },
+        "byRequest": {
+            "type": "boolean"
+        },
+        "restrictionByWeight": {
+            "type": "integer"
+        },
+        "restrictionByCount": {
+            "type": "integer"
+        },
+        "price": {
+            "type": "integer"
+        }
     },
-    "byRequest": {
-      "type": "boolean"
-    },
-    "restrictionByWeight": {
-      "type": "integer"
-    },
-    "restrictionByCount": {
-      "type": "integer"
-    },
-    "price": {
-      "type": "integer"
+    "collectionName": "components_hotel_animal",
+    "info": {
+        "displayName": "Животные"
     }
-  },
-  "collectionName": "components_hotel_animal",
-  "info": {
-    "displayName": "Животные"
-  }
 }

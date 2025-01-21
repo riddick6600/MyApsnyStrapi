@@ -1,28 +1,28 @@
 {
-  "attributes": {
-    "kind": {
-      "type": "enumeration",
-      "enum": [
-        "Adult",
-        "ExtraAdult",
-        "Child",
-        "ExtraChild",
-        "ChildBandWithoutBed"
-      ]
+    "attributes": {
+        "kind": {
+            "type": "enumeration",
+            "enum": [
+                "Adult",
+                "ExtraAdult",
+                "Child",
+                "ExtraChild",
+                "ChildBandWithoutBed"
+            ]
+        },
+        "count": {
+            "type": "integer"
+        },
+        "minAge": {
+            "type": "integer"
+        },
+        "maxAge": {
+            "type": "integer"
+        }
     },
-    "count": {
-      "type": "integer"
-    },
-    "minAge": {
-      "type": "integer"
-    },
-    "maxAge": {
-      "type": "integer"
+    "collectionName": "components_travelline_placement",
+    "info": {
+        "displayName": "Размещение",
+        "icon": "size"
     }
-  },
-  "collectionName": "components_travelline_placement",
-  "info": {
-    "displayName": "Размещение",
-    "icon": "size"
-  }
 }

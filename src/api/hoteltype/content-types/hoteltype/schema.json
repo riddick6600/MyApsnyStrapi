@@ -1,24 +1,24 @@
 {
-  "kind": "collectionType",
-  "collectionName": "hoteltypes",
-  "info": {
-    "singularName": "hoteltype",
-    "pluralName": "hoteltypes",
-    "displayName": "Типы жилья",
-    "description": ""
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
-  "attributes": {
-    "name": {
-      "type": "string",
-      "required": true
+    "kind": "collectionType",
+    "collectionName": "hoteltypes",
+    "info": {
+        "singularName": "hoteltype",
+        "pluralName": "hoteltypes",
+        "displayName": "Типы жилья",
+        "description": ""
     },
-    "code": {
-      "type": "string",
-      "required": true
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true
+        },
+        "code": {
+            "type": "string",
+            "required": true
+        }
     }
-  }
 }

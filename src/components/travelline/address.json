@@ -1,44 +1,44 @@
 {
-  "collectionName": "components_travelline_address",
-  "info": {
-    "displayName": "Адрес",
-    "icon": "map",
-    "description": ""
-  },
-  "attributes": {
-    "addressLine": {
-      "type": "string"
+    "collectionName": "components_travelline_address",
+    "info": {
+        "displayName": "Адрес",
+        "icon": "map",
+        "description": ""
     },
-    "latitude": {
-      "type": "float",
-      "min": -90,
-      "max": 90
-    },
-    "longitude": {
-      "type": "float",
-      "min": -180,
-      "max": 180
-    },
-    "remark": {
-      "type": "string"
-    },
-    "cityName": {
-      "type": "string"
-    },
-    "cityId": {
-      "type": "string"
-    },
-    "postalCode": {
-      "type": "string"
-    },
-    "countryCode": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "regionId": {
-      "type": "string"
+    "attributes": {
+        "addressLine": {
+            "type": "string"
+        },
+        "latitude": {
+            "type": "float",
+            "min": -90,
+            "max": 90
+        },
+        "longitude": {
+            "type": "float",
+            "min": -180,
+            "max": 180
+        },
+        "remark": {
+            "type": "string"
+        },
+        "cityName": {
+            "type": "string"
+        },
+        "cityId": {
+            "type": "string"
+        },
+        "postalCode": {
+            "type": "string"
+        },
+        "countryCode": {
+            "type": "string"
+        },
+        "region": {
+            "type": "string"
+        },
+        "regionId": {
+            "type": "string"
+        }
     }
-  }
 }

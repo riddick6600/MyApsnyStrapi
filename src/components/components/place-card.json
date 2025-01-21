@@ -1,23 +1,21 @@
 {
-  "collectionName": "components_components_place_cards",
-  "info": {
-    "displayName": "PlaceCard",
-    "icon": "pin",
-    "description": ""
-  },
-  "options": {},
-  "attributes": {
-    "place": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::place.place"
+    "collectionName": "components_components_place_cards",
+    "info": {
+        "displayName": "PlaceCard",
+        "icon": "pin",
+        "description": ""
     },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "options": {},
+    "attributes": {
+        "place": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::place.place"
+        },
+        "image": {
+            "allowedTypes": ["images"],
+            "type": "media",
+            "multiple": false
+        }
     }
-  }
 }

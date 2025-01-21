@@ -1,21 +1,21 @@
 {
-  "collectionName": "components_travelline_vat",
-  "info": {
-    "displayName": "Налоги",
-    "icon": "dollar-sign",
-    "description": "Налоги Отеля"
-  },
-  "attributes": {
-    "applicable": {
-      "type": "boolean",
-      "default": false
+    "collectionName": "components_travelline_vat",
+    "info": {
+        "displayName": "Налоги",
+        "icon": "dollar-sign",
+        "description": "Налоги Отеля"
     },
-    "included": {
-      "type": "boolean",
-      "default": false
-    },
-    "percent": {
-      "type": "integer"
+    "attributes": {
+        "applicable": {
+            "type": "boolean",
+            "default": false
+        },
+        "included": {
+            "type": "boolean",
+            "default": false
+        },
+        "percent": {
+            "type": "integer"
+        }
     }
-  }
 }

@@ -1,25 +1,25 @@
 {
-  "collectionName": "components_components_components",
-  "info": {
-    "displayName": "component",
-    "icon": "rocket",
-    "description": ""
-  },
-  "options": {},
-  "attributes": {
-    "name": {
-      "type": "string"
+    "collectionName": "components_components_components",
+    "info": {
+        "displayName": "component",
+        "icon": "rocket",
+        "description": ""
     },
-    "params": {
-      "type": "json"
-    },
-    "content": {
-      "type": "richtext"
-    },
-    "PlaceCards": {
-      "type": "component",
-      "repeatable": true,
-      "component": "components.place-card"
+    "options": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "params": {
+            "type": "json"
+        },
+        "content": {
+            "type": "richtext"
+        },
+        "PlaceCards": {
+            "type": "component",
+            "repeatable": true,
+            "component": "components.place-card"
+        }
     }
-  }
 }

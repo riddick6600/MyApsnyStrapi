@@ -1,48 +1,42 @@
 {
-  "collectionName": "components_travelline_service",
-  "info": {
-    "displayName": "Услуги",
-    "icon": "dollar",
-    "description": ""
-  },
-  "attributes": {
-    "name": {
-      "type": "string"
+    "collectionName": "components_travelline_service",
+    "info": {
+        "displayName": "Услуги",
+        "icon": "dollar",
+        "description": ""
     },
-    "externalId": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "kind": {
-      "type": "enumeration",
-      "enum": [
-        "",
-        "Common",
-        "Meal"
-      ]
-    },
-    "mealPlanCode": {
-      "type": "string"
-    },
-    "mealPlanName": {
-      "type": "string"
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "externalStatus": {
-      "type": "string"
-    },
-    "vat": {
-      "type": "component",
-      "component": "travelline.vat"
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "externalId": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "kind": {
+            "type": "enumeration",
+            "enum": ["", "Common", "Meal"]
+        },
+        "mealPlanCode": {
+            "type": "string"
+        },
+        "mealPlanName": {
+            "type": "string"
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "externalStatus": {
+            "type": "string"
+        },
+        "vat": {
+            "type": "component",
+            "component": "travelline.vat"
+        }
     }
-  }
 }

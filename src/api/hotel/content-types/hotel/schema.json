@@ -1,110 +1,113 @@
 {
-  "kind": "collectionType",
-  "collectionName": "hotels",
-  "info": {
-    "singularName": "hotel",
-    "pluralName": "hotels",
-    "displayName": "Отели",
-    "description": "Управление Отелями"
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "attributes": {
-    "name": {
-      "type": "string"
+    "kind": "collectionType",
+    "collectionName": "hotels",
+    "info": {
+        "singularName": "hotel",
+        "pluralName": "hotels",
+        "displayName": "Отели",
+        "description": "Управление Отелями"
     },
-    "isActive": {
-      "type": "boolean"
+    "options": {
+        "draftAndPublish": false
     },
-    "isRecommended": {
-      "type": "boolean",
-      "default": false
-    },
-    "hotelType": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::hoteltype.hoteltype"
-    },
-    "city": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::place.place"
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "content": {
-      "type": "richtext"
-    },
-    "stars": {
-      "type": "integer",
-      "min": 0,
-      "max": 5
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "distanceToSea": {
-      "type": "integer"
-    },
-    "distanceToCenter": {
-      "type": "integer"
-    },
-    "roomCount": {
-      "type": "integer"
-    },
-    "constructionYear": {
-      "type": "integer"
-    },
-    "place": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::place.place"
-    },
-    "amenities": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::amenity.amenity"
-    },
-    "remark": {
-      "type": "string"
-    },
-    "contacts": {
-      "type": "component",
-      "component": "hotel.contact-info"
-    },
-    "page": {
-      "type": "component",
-      "component": "page.page"
-    },
-    "travelline": {
-      "displayName": "travelline",
-      "type": "component",
-      "component": "travelline.hotel"
-    },
-    "address": {
-      "type": "component",
-      "component": "travelline.address"
-    },
-    "policy": {
-      "type": "component",
-      "component": "travelline.policy"
-    },
-    "faq": {
-      "label": "Часто задаваемые вопросы",
-      "type": "string",
-      "repeatable": true
-    },
-    "roomTypes": {
-      "type": "component",
-      "component": "travelline.room-type",
-      "repeatable": true
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "isActive": {
+            "type": "boolean"
+        },
+        "isRecommended": {
+            "type": "boolean",
+            "default": false
+        },
+        "hotelType": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::hoteltype.hoteltype"
+        },
+        "city": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::place.place"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "content": {
+            "type": "richtext"
+        },
+        "stars": {
+            "type": "integer",
+            "min": 0,
+            "max": 5
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "distanceToSea": {
+            "type": "integer"
+        },
+        "distanceToCenter": {
+            "type": "integer"
+        },
+        "roomCount": {
+            "type": "integer"
+        },
+        "constructionYear": {
+            "type": "integer"
+        },
+        "place": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::place.place"
+        },
+        "amenities": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::amenity.amenity"
+        },
+        "remark": {
+            "type": "string"
+        },
+        "contacts": {
+            "type": "component",
+            "component": "hotel.contact-info"
+        },
+        "page": {
+            "type": "component",
+            "component": "page.page"
+        },
+        "travelline": {
+            "displayName": "travelline",
+            "type": "component",
+            "component": "travelline.property"
+        },
+        "address": {
+            "type": "component",
+            "component": "travelline.address"
+        },
+        "policy": {
+            "type": "component",
+            "component": "travelline.policy"
+        },
+        "faq": {
+            "label": "Часто задаваемые вопросы",
+            "type": "string",
+            "repeatable": true
+        },
+        "roomTypes": {
+            "type": "component",
+            "component": "travelline.room-type",
+            "repeatable": true
+        },
+        "cancellationRules": {
+            "type": "component",
+            "repeatable": true,
+            "component": "travelline.cancellation-rule"
+        }
     }
-  }
 }

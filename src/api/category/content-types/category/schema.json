@@ -1,32 +1,32 @@
 {
-  "kind": "collectionType",
-  "collectionName": "categories",
-  "info": {
-    "singularName": "category",
-    "pluralName": "categories",
-    "displayName": "Категории Блога",
-    "description": "Organize your content into categories"
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
-  "attributes": {
-    "name": {
-      "type": "string"
+    "kind": "collectionType",
+    "collectionName": "categories",
+    "info": {
+        "singularName": "category",
+        "pluralName": "categories",
+        "displayName": "Категории Блога",
+        "description": "Organize your content into categories"
     },
-    "description": {
-      "type": "text"
+    "options": {
+        "draftAndPublish": false
     },
-    "articles": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::article.article",
-      "mappedBy": "categories"
-    },
-    "page": {
-      "type": "component",
-      "component": "page.page"
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "articles": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::article.article",
+            "mappedBy": "categories"
+        },
+        "page": {
+            "type": "component",
+            "component": "page.page"
+        }
     }
-  }
 }

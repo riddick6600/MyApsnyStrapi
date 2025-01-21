@@ -1,18 +1,18 @@
 {
-  "attributes": {
-    "adultBed": {
-      "type": "integer"
+    "attributes": {
+        "adultBed": {
+            "type": "integer"
+        },
+        "extraBed": {
+            "type": "integer"
+        },
+        "childWithoutBed": {
+            "type": "integer"
+        }
     },
-    "extraBed": {
-      "type": "integer"
-    },
-    "childWithoutBed": {
-      "type": "integer"
+    "collectionName": "components_travelline_occupancy",
+    "info": {
+        "displayName": "Вместимость",
+        "icon": "size"
     }
-  },
-  "collectionName": "components_travelline_occupancy",
-  "info": {
-    "displayName": "Вместимость",
-    "icon": "size"
-  }
 }

@@ -1,32 +1,32 @@
 {
-  "kind": "collectionType",
-  "collectionName": "articles",
-  "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Статьи",
-    "description": "Create your blog content"
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
-  "attributes": {
-    "name": {
-      "type": "string"
+    "kind": "collectionType",
+    "collectionName": "articles",
+    "info": {
+        "singularName": "article",
+        "pluralName": "articles",
+        "displayName": "Статьи",
+        "description": "Create your blog content"
     },
-    "description": {
-      "type": "text"
+    "options": {
+        "draftAndPublish": false
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "articles"
-    },
-    "page": {
-      "type": "component",
-      "component": "page.page"
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "categories": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::category.category",
+            "inversedBy": "articles"
+        },
+        "page": {
+            "type": "component",
+            "component": "page.page"
+        }
     }
-  }
 }

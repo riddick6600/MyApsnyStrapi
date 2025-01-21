@@ -1,0 +1,24 @@
+{
+    "collectionName": "components_travelline_cancellation_rules",
+    "info": {
+        "name": "cancellation-rule",
+        "icon": "calendar-times"
+    },
+    "options": {},
+    "attributes": {
+        "externalId": {
+            "type": "string"
+        },
+        "propertyId": {
+            "type": "string"
+        },
+        "referencePointKind": {
+            "type": "string"
+        },
+        "cancellationTerms": {
+            "type": "component",
+            "repeatable": true,
+            "component": "travelline.cancellation-term"
+        }
+    }
+}

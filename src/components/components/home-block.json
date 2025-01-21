@@ -1,28 +1,26 @@
 {
-  "collectionName": "components_components_home_blocks",
-  "info": {
-    "displayName": "HomeCard",
-    "icon": "file",
-    "description": ""
-  },
-  "options": {},
-  "attributes": {
-    "name": {
-      "type": "string"
+    "collectionName": "components_components_home_blocks",
+    "info": {
+        "displayName": "HomeCard",
+        "icon": "file",
+        "description": ""
     },
-    "description": {
-      "type": "string"
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "href": {
-      "type": "string"
+    "options": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "href": {
+            "type": "string"
+        }
     }
-  }
 }

@@ -1,31 +1,31 @@
 {
-  "attributes": {
-    "checkInTime": {
-      "type": "time"
+    "attributes": {
+        "checkInTime": {
+            "type": "time"
+        },
+        "checkOutTime": {
+            "type": "time"
+        },
+        "minLengthOfStay": {
+            "type": "integer"
+        },
+        "minDaysBeforeArrival": {
+            "type": "integer"
+        },
+        "maxDaysBeforeArrival": {
+            "type": "integer"
+        },
+        "smoking": {
+            "type": "string"
+        },
+        "animal": {
+            "type": "component",
+            "component": "hotel.animal"
+        }
     },
-    "checkOutTime": {
-      "type": "time"
-    },
-    "minLengthOfStay": {
-      "type": "integer"
-    },
-    "minDaysBeforeArrival": {
-      "type": "integer"
-    },
-    "maxDaysBeforeArrival": {
-      "type": "integer"
-    },
-    "smoking": {
-      "type": "string"
-    },
-    "animal": {
-      "type": "component",
-      "component": "hotel.animal"
+    "collectionName": "components_travelline_policy",
+    "info": {
+        "displayName": "Правила отеля",
+        "icon": "information"
     }
-  },
-  "collectionName": "components_travelline_policy",
-  "info": {
-    "displayName": "Правила отеля",
-    "icon": "information"
-  }
 }

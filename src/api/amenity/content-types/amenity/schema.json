@@ -1,32 +1,30 @@
 {
-  "kind": "collectionType",
-  "collectionName": "amenities",
-  "info": {
-    "singularName": "amenity",
-    "pluralName": "amenities",
-    "displayName": "Удобства"
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
-  "attributes": {
-    "name": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "kind": "collectionType",
+    "collectionName": "amenities",
+    "info": {
+        "singularName": "amenity",
+        "pluralName": "amenities",
+        "displayName": "Удобства"
     },
-    "code": {
-      "type": "string",
-      "required": true,
-      "unique": true
+    "options": {
+        "draftAndPublish": false
     },
-    "image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "code": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "image": {
+            "allowedTypes": ["images"],
+            "type": "media",
+            "multiple": false
+        }
     }
-  }
 }

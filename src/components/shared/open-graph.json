@@ -1,32 +1,30 @@
 {
-  "collectionName": "components_shared_open_graphs",
-  "info": {
-    "displayName": "openGraph",
-    "icon": "project-diagram"
-  },
-  "attributes": {
-    "og:title": {
-      "type": "string",
-      "maxLength": 70
+    "collectionName": "components_shared_open_graphs",
+    "info": {
+        "displayName": "openGraph",
+        "icon": "project-diagram"
     },
-    "og:description": {
-      "type": "string",
-      "maxLength": 200
-    },
-    "og:image": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "og:url": {
-      "type": "string",
-      "required": false
-    },
-    "og:type": {
-      "type": "string",
-      "required": false
+    "attributes": {
+        "og:title": {
+            "type": "string",
+            "maxLength": 70
+        },
+        "og:description": {
+            "type": "string",
+            "maxLength": 200
+        },
+        "og:image": {
+            "allowedTypes": ["images"],
+            "type": "media",
+            "multiple": false
+        },
+        "og:url": {
+            "type": "string",
+            "required": false
+        },
+        "og:type": {
+            "type": "string",
+            "required": false
+        }
     }
-  }
 }

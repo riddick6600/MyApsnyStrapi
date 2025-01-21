@@ -1,0 +1,33 @@
+{
+    "collectionName": "components_travelline_cancellation_terms",
+    "info": {
+        "name": "cancellation-term",
+        "icon": "calendar-minus"
+    },
+    "attributes": {
+        "beforeArrivalMatching": {
+            "type": "string"
+        },
+        "beforeArrivalUnit": {
+            "type": "string"
+        },
+        "beforeArrivalValue": {
+            "type": "integer"
+        },
+        "beforeArrivalValueMax": {
+            "type": "integer"
+        },
+        "penaltyCalculationMethod": {
+            "type": "string"
+        },
+        "penaltyValue": {
+            "type": "integer"
+        },
+        "penaltyValueCurrency": {
+            "type": "string"
+        },
+        "arrivalDates": {
+            "type": "json"
+        }
+    }
+}

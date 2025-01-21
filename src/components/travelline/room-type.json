@@ -1,56 +1,54 @@
 {
-  "attributes": {
-    "name": {
-      "type": "string"
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "externalId": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "amenities": {
+            "type": "component",
+            "component": "travelline.amenity",
+            "repeatable": true
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": ["images"]
+        },
+        "size": {
+            "type": "component",
+            "component": "travelline.size"
+        },
+        "categoryCode": {
+            "type": "string"
+        },
+        "categoryName": {
+            "type": "string"
+        },
+        "address": {
+            "type": "component",
+            "component": "travelline.address"
+        },
+        "occupancy": {
+            "type": "component",
+            "component": "travelline.occupancy"
+        },
+        "placements": {
+            "type": "component",
+            "component": "travelline.placement",
+            "repeatable": true
+        },
+        "position": {
+            "type": "integer"
+        }
     },
-    "externalId": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "amenities": {
-      "type": "component",
-      "component": "travelline.amenity",
-      "repeatable": true
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "size": {
-      "type": "component",
-      "component": "travelline.size"
-    },
-    "categoryCode": {
-      "type": "string"
-    },
-    "categoryName": {
-      "type": "string"
-    },
-    "address": {
-      "type": "component",
-      "component": "travelline.address"
-    },
-    "occupancy": {
-      "type": "component",
-      "component": "travelline.occupancy"
-    },
-    "placements": {
-      "type": "component",
-      "component": "travelline.placement",
-      "repeatable": true
-    },
-    "position": {
-      "type": "integer"
+    "collectionName": "components_travelline_room_type",
+    "info": {
+        "displayName": "Категория номера",
+        "icon": "bed"
     }
-  },
-  "collectionName": "components_travelline_room_type",
-  "info": {
-    "displayName": "Категория номера",
-    "icon": "bed"
-  }
 }

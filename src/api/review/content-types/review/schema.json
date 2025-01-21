@@ -1,39 +1,39 @@
 {
-  "kind": "collectionType",
-  "collectionName": "reviews",
-  "info": {
-    "singularName": "review",
-    "pluralName": "reviews",
-    "displayName": "Отзыв",
-    "description": ""
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "attributes": {
-    "title": {
-      "type": "string"
+    "kind": "collectionType",
+    "collectionName": "reviews",
+    "info": {
+        "singularName": "review",
+        "pluralName": "reviews",
+        "displayName": "Отзыв",
+        "description": ""
     },
-    "content": {
-      "type": "text"
+    "options": {
+        "draftAndPublish": false
     },
-    "rating": {
-      "type": "integer",
-      "min": 1,
-      "max": 5
-    },
-    "author": {
-      "type": "string"
-    },
-    "verified": {
-      "type": "boolean",
-      "default": false
-    },
-    "verificationDate": {
-      "type": "datetime"
-    },
-    "response": {
-      "type": "string"
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "content": {
+            "type": "text"
+        },
+        "rating": {
+            "type": "integer",
+            "min": 1,
+            "max": 5
+        },
+        "author": {
+            "type": "string"
+        },
+        "verified": {
+            "type": "boolean",
+            "default": false
+        },
+        "verificationDate": {
+            "type": "datetime"
+        },
+        "response": {
+            "type": "string"
+        }
     }
-  }
 }

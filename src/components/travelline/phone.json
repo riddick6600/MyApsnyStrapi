@@ -1,30 +1,30 @@
 {
-  "attributes": {
-    "phoneNumber": {
-      "type": "string"
+    "attributes": {
+        "phoneNumber": {
+            "type": "string"
+        },
+        "techType": {
+            "type": "enumeration",
+            "enum": [
+                "",
+                "mobile",
+                "landline",
+                "fax",
+                "whatsapp",
+                "Mobile",
+                "Landline",
+                "Fax",
+                "Whatsapp"
+            ],
+            "default": "whatsapp"
+        },
+        "remark": {
+            "type": "string"
+        }
     },
-    "techType": {
-      "type": "enumeration",
-      "enum": [
-        "",
-        "mobile",
-        "landline",
-        "fax",
-        "whatsapp",
-        "Mobile",
-        "Landline",
-        "Fax",
-        "Whatsapp"
-      ],
-      "default": "whatsapp"
-    },
-    "remark": {
-      "type": "string"
+    "collectionName": "components_travelline_phone",
+    "info": {
+        "displayName": "Телефон",
+        "icon": "phone"
     }
-  },
-  "collectionName": "components_travelline_phone",
-  "info": {
-    "displayName": "Телефон",
-    "icon": "phone"
-  }
 }

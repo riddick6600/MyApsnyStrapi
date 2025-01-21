@@ -1,43 +1,35 @@
 {
-  "kind": "singleType",
-  "collectionName": "homes",
-  "info": {
-    "singularName": "home",
-    "pluralName": "homes",
-    "displayName": "home",
-    "description": ""
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
-  "attributes": {
-    "name": {
-      "type": "string"
+    "kind": "singleType",
+    "collectionName": "homes",
+    "info": {
+        "singularName": "home",
+        "pluralName": "homes",
+        "displayName": "home",
+        "description": ""
     },
-    "page": {
-      "type": "component",
-      "component": "page.page"
+    "options": {
+        "draftAndPublish": false
     },
-    "first": {
-      "type": "dynamiczone",
-      "components": [
-        "components.place-card",
-        "components.home-block"
-      ]
-    },
-    "second": {
-      "type": "dynamiczone",
-      "components": [
-        "components.place-card"
-      ]
-    },
-    "third": {
-      "type": "dynamiczone",
-      "components": [
-        "components.place-card",
-        "components.home-block"
-      ]
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "page": {
+            "type": "component",
+            "component": "page.page"
+        },
+        "first": {
+            "type": "dynamiczone",
+            "components": ["components.place-card", "components.home-block"]
+        },
+        "second": {
+            "type": "dynamiczone",
+            "components": ["components.place-card"]
+        },
+        "third": {
+            "type": "dynamiczone",
+            "components": ["components.place-card", "components.home-block"]
+        }
     }
-  }
 }

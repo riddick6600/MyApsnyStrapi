@@ -1,24 +1,17 @@
 {
-  "attributes": {
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "single",
-        "double",
-        "queen",
-        "king",
-        "sofa",
-        "bunk"
-      ]
+    "attributes": {
+        "type": {
+            "type": "enumeration",
+            "enum": ["single", "double", "queen", "king", "sofa", "bunk"]
+        },
+        "count": {
+            "type": "integer",
+            "min": 1
+        }
     },
-    "count": {
-      "type": "integer",
-      "min": 1
+    "collectionName": "components_travelline_bed",
+    "info": {
+        "displayName": "Кровать",
+        "icon": "bed"
     }
-  },
-  "collectionName": "components_travelline_bed",
-  "info": {
-    "displayName": "Кровать",
-    "icon": "bed"
-  }
 }

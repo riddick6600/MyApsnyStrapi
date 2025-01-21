@@ -1,25 +1,25 @@
 {
-  "attributes": {
-    "address": {
-      "type": "component",
-      "component": "travelline.address"
+    "attributes": {
+        "address": {
+            "type": "component",
+            "component": "travelline.address"
+        },
+        "phones": {
+            "type": "component",
+            "component": "travelline.phone",
+            "repeatable": true
+        },
+        "emails": {
+            "type": "string"
+        },
+        "website": {
+            "type": "string"
+        }
     },
-    "phones": {
-      "type": "component",
-      "component": "travelline.phone",
-      "repeatable": true
-    },
-    "emails": {
-      "type": "string"
-    },
-    "website": {
-      "type": "string"
+    "collectionName": "components_travelline_contact_info",
+    "info": {
+        "displayName": "Контактная информация",
+        "icon": "phone",
+        "description": "Контактные данные отеля"
     }
-  },
-  "collectionName": "components_travelline_contact_info",
-  "info": {
-    "displayName": "Контактная информация",
-    "icon": "phone",
-    "description": "Контактные данные отеля"
-  }
 }

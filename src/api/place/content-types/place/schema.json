@@ -1,37 +1,35 @@
 {
-  "kind": "collectionType",
-  "collectionName": "places",
-  "info": {
-    "singularName": "place",
-    "pluralName": "places",
-    "displayName": "Местоположение",
-    "description": ""
-  },
-  "options": {
-    "draftAndPublish": false
-  },
-  "pluginOptions": {},
-  "attributes": {
-    "name": {
-      "type": "string"
+    "kind": "collectionType",
+    "collectionName": "places",
+    "info": {
+        "singularName": "place",
+        "pluralName": "places",
+        "displayName": "Местоположение",
+        "description": ""
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "options": {
+        "draftAndPublish": false
     },
-    "description": {
-      "type": "text"
-    },
-    "page": {
-      "type": "component",
-      "component": "page.page"
-    },
-    "isCity": {
-      "type": "boolean"
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "description": {
+            "type": "text"
+        },
+        "page": {
+            "type": "component",
+            "component": "page.page"
+        },
+        "isCity": {
+            "type": "boolean"
+        }
     }
-  }
 }

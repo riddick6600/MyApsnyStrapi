@@ -1,37 +1,37 @@
 {
-  "collectionName": "components_travelline_rate_plan",
-  "info": {
-    "displayName": "Тарифный план",
-    "icon": "dollar-sign",
-    "description": "Тарифный план отеля"
-  },
-  "attributes": {
-    "name": {
-      "type": "string"
+    "collectionName": "components_travelline_rate_plan",
+    "info": {
+        "displayName": "Тарифный план",
+        "icon": "dollar-sign",
+        "description": "Тарифный план отеля"
     },
-    "externalId": {
-      "type": "string"
-    },
-    "description": {
-      "type": "text"
-    },
-    "currency": {
-      "type": "string",
-      "default": "RUB"
-    },
-    "isStayWithChildrenOnly": {
-      "type": "boolean",
-      "default": false
-    },
-    "cancellationRuleId": {
-      "type": "string"
-    },
-    "extraStayRuleId": {
-      "type": "string"
-    },
-    "vat": {
-      "type": "component",
-      "component": "travelline.vat"
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "externalId": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "currency": {
+            "type": "string",
+            "default": "RUB"
+        },
+        "isStayWithChildrenOnly": {
+            "type": "boolean",
+            "default": false
+        },
+        "cancellationRuleId": {
+            "type": "string"
+        },
+        "extraStayRuleId": {
+            "type": "string"
+        },
+        "vat": {
+            "type": "component",
+            "component": "travelline.vat"
+        }
     }
-  }
 }

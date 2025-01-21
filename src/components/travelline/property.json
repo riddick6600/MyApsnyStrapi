@@ -1,0 +1,64 @@
+{
+    "collectionName": "components_travelline_property",
+    "info": {
+        "displayName": "TravelLine Данные Отеля",
+        "icon": "gate"
+    },
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "externalId": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": ["images"]
+        },
+        "stayUnitKind": {
+            "type": "enumeration",
+            "enum": ["NightRate", "DailyRate"],
+            "default": "NightRate"
+        },
+        "contactInfo": {
+            "type": "component",
+            "component": "travelline.contact-info"
+        },
+        "policy": {
+            "type": "component",
+            "component": "travelline.policy"
+        },
+        "timeZone": {
+            "type": "string"
+        },
+        "ratePlans": {
+            "type": "component",
+            "component": "travelline.rate-plan",
+            "repeatable": true
+        },
+        "roomTypes": {
+            "type": "component",
+            "component": "travelline.room-type",
+            "repeatable": true
+        },
+        "services": {
+            "type": "component",
+            "component": "travelline.service",
+            "repeatable": true
+        },
+        "cancellationRules": {
+            "type": "component",
+            "repeatable": true,
+            "component": "travelline.cancellation-rule"
+        },
+        "multiLocationProperty": {
+            "type": "boolean",
+            "default": false
+        }
+    }
+}

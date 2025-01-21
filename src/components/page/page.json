@@ -1,25 +1,25 @@
 {
-  "collectionName": "components_page_pages",
-  "info": {
-    "displayName": "page",
-    "icon": "monitor",
-    "description": ""
-  },
-  "options": {},
-  "attributes": {
-    "title": {
-      "type": "string"
+    "collectionName": "components_page_pages",
+    "info": {
+        "displayName": "page",
+        "icon": "monitor",
+        "description": ""
     },
-    "slug": {
-      "type": "string",
-      "unique_щаа": true
-    },
-    "content": {
-      "type": "richtext"
-    },
-    "seo": {
-      "type": "component",
-      "component": "shared.seo"
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string",
+            "unique_щаа": true
+        },
+        "content": {
+            "type": "richtext"
+        },
+        "seo": {
+            "type": "component",
+            "component": "shared.seo"
+        }
     }
-  }
 }
