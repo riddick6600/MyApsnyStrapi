@@ -2,10 +2,8 @@
     "collectionName": "components_components_home_blocks",
     "info": {
         "displayName": "HomeCard",
-        "icon": "file",
-        "description": ""
+        "icon": "file"
     },
-    "options": {},
     "attributes": {
         "name": {
             "type": "string"
@@ -16,8 +14,9 @@
         "image": {
             "type": "media",
             "multiple": false,
-            "required": false,
-            "allowedTypes": ["images"]
+            "allowedTypes": [
+                "images"
+            ]
         },
         "href": {
             "type": "string"

@@ -4,7 +4,6 @@
         "displayName": "seo",
         "icon": "search"
     },
-    "options": {},
     "attributes": {
         "metaTitle": {
             "required": true,
@@ -19,8 +18,9 @@
         "metaImage": {
             "type": "media",
             "multiple": false,
-            "required": false,
-            "allowedTypes": ["images"]
+            "allowedTypes": [
+                "images"
+            ]
         },
         "openGraph": {
             "type": "component",

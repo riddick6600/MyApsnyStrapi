@@ -1,4 +1,10 @@
 {
+    "collectionName": "components_travelline_contact_info",
+    "info": {
+        "displayName": "Контактная информация",
+        "icon": "phone",
+        "description": "Контактные данные отеля"
+    },
     "attributes": {
         "address": {
             "type": "component",
@@ -15,11 +21,5 @@
         "website": {
             "type": "string"
         }
-    },
-    "collectionName": "components_travelline_contact_info",
-    "info": {
-        "displayName": "Контактная информация",
-        "icon": "phone",
-        "description": "Контактные данные отеля"
     }
 }

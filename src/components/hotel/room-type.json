@@ -1,5 +1,5 @@
 {
-    "collectionName": "components_travelline_room_type",
+    "collectionName": "components_hotel_room_type",
     "info": {
         "displayName": "Категория номера",
         "icon": "bed"
@@ -15,9 +15,9 @@
             "type": "text"
         },
         "amenities": {
-            "type": "component",
-            "component": "travelline.amenity",
-            "repeatable": true
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::amenity.amenity"
         },
         "images": {
             "type": "media",
@@ -27,18 +27,10 @@
             ]
         },
         "size": {
-            "type": "component",
-            "component": "travelline.size"
+            "type": "integer"
         },
-        "categoryCode": {
+        "category": {
             "type": "string"
-        },
-        "categoryName": {
-            "type": "string"
-        },
-        "address": {
-            "type": "component",
-            "component": "travelline.address"
         },
         "occupancy": {
             "type": "component",
@@ -46,7 +38,7 @@
         },
         "placements": {
             "type": "component",
-            "component": "travelline.placement",
+            "component": "hotel.placement",
             "repeatable": true
         },
         "position": {

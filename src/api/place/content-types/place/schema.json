@@ -4,13 +4,8 @@
     "info": {
         "singularName": "place",
         "pluralName": "places",
-        "displayName": "Местоположение",
-        "description": ""
+        "displayName": "Местоположение"
     },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {},
     "attributes": {
         "name": {
             "type": "string"
@@ -18,8 +13,9 @@
         "image": {
             "type": "media",
             "multiple": false,
-            "required": false,
-            "allowedTypes": ["images"]
+            "allowedTypes": [
+                "images"
+            ]
         },
         "description": {
             "type": "text"

@@ -7,16 +7,19 @@
         "displayName": "Статьи",
         "description": "Create your blog content"
     },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {},
     "attributes": {
         "name": {
             "type": "string"
         },
         "description": {
             "type": "text"
+        },
+        "image": {
+            "allowedTypes": [
+                "images"
+            ],
+            "type": "media",
+            "multiple": false
         },
         "categories": {
             "type": "relation",

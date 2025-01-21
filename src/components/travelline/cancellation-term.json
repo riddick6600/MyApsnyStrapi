@@ -6,10 +6,21 @@
     },
     "attributes": {
         "beforeArrivalMatching": {
-            "type": "string"
+            "type": "enumeration",
+            "enum": [
+                "NoMatter",
+                "AtLeast",
+                "NoMoreThan",
+                "Between"
+            ]
         },
         "beforeArrivalUnit": {
-            "type": "string"
+            "type": "enumeration",
+            "enum": [
+                "None",
+                "Day",
+                "Hour"
+            ]
         },
         "beforeArrivalValue": {
             "type": "integer"
@@ -18,16 +29,26 @@
             "type": "integer"
         },
         "penaltyCalculationMethod": {
-            "type": "string"
+            "type": "enumeration",
+            "enum": [
+                "PrepaymentPercent",
+                "FirstNights",
+                "NoPenalty",
+                "FirstNightPercent",
+                "Percent",
+                "Fixed"
+            ]
         },
         "penaltyValue": {
-            "type": "integer"
+            "type": "float"
         },
         "penaltyValueCurrency": {
             "type": "string"
         },
         "arrivalDates": {
-            "type": "json"
+            "type": "component",
+            "repeatable": true,
+            "component": "travelline.arrival-date"
         }
     }
 }

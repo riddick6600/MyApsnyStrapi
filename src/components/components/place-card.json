@@ -2,10 +2,8 @@
     "collectionName": "components_components_place_cards",
     "info": {
         "displayName": "PlaceCard",
-        "icon": "pin",
-        "description": ""
+        "icon": "pin"
     },
-    "options": {},
     "attributes": {
         "place": {
             "type": "relation",
@@ -13,7 +11,9 @@
             "target": "api::place.place"
         },
         "image": {
-            "allowedTypes": ["images"],
+            "allowedTypes": [
+                "images"
+            ],
             "type": "media",
             "multiple": false
         }

@@ -2,8 +2,7 @@
     "collectionName": "components_travelline_address",
     "info": {
         "displayName": "Адрес",
-        "icon": "map",
-        "description": ""
+        "icon": "map"
     },
     "attributes": {
         "addressLine": {
@@ -20,7 +19,7 @@
             "max": 180
         },
         "remark": {
-            "type": "string"
+            "type": "text"
         },
         "cityName": {
             "type": "string"

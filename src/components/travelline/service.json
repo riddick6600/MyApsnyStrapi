@@ -2,8 +2,7 @@
     "collectionName": "components_travelline_service",
     "info": {
         "displayName": "Услуги",
-        "icon": "dollar",
-        "description": ""
+        "icon": "dollar"
     },
     "attributes": {
         "name": {
@@ -17,7 +16,10 @@
         },
         "kind": {
             "type": "enumeration",
-            "enum": ["", "Common", "Meal"]
+            "enum": [
+                "Common",
+                "Meal"
+            ]
         },
         "mealPlanCode": {
             "type": "string"
@@ -28,8 +30,9 @@
         "images": {
             "type": "media",
             "multiple": true,
-            "required": false,
-            "allowedTypes": ["images"]
+            "allowedTypes": [
+                "images"
+            ]
         },
         "externalStatus": {
             "type": "string"

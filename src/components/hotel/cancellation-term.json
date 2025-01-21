@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_hotel_cancellation_terms",
+    "info": {
+        "name": "cancellation-term",
+        "icon": "calendar-minus"
+    },
+    "attributes": {
+        "from": {
+            "type": "integer"
+        },
+        "to": {
+            "type": "integer"
+        },
+        "value": {
+            "type": "integer"
+        }
+    }
+}

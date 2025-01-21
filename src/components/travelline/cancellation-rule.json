@@ -4,16 +4,19 @@
         "name": "cancellation-rule",
         "icon": "calendar-times"
     },
-    "options": {},
     "attributes": {
         "externalId": {
             "type": "string"
         },
-        "propertyId": {
-            "type": "string"
-        },
         "referencePointKind": {
-            "type": "string"
+            "type": "enumeration",
+            "enum": [
+                "ProviderArrivalTime",
+                "ProviderDepartureTime",
+                "GuestArrivalTime",
+                "CustomArrivalTime",
+                "BookingCreationTime"
+            ]
         },
         "cancellationTerms": {
             "type": "component",

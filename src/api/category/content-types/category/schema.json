@@ -7,16 +7,19 @@
         "displayName": "Категории Блога",
         "description": "Organize your content into categories"
     },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {},
     "attributes": {
         "name": {
             "type": "string"
         },
         "description": {
             "type": "text"
+        },
+        "image": {
+            "allowedTypes": [
+                "images"
+            ],
+            "type": "media",
+            "multiple": false
         },
         "articles": {
             "type": "relation",

@@ -1,4 +1,9 @@
 {
+    "collectionName": "components_travelline_policy",
+    "info": {
+        "displayName": "Правила отеля",
+        "icon": "information"
+    },
     "attributes": {
         "checkInTime": {
             "type": "time"
@@ -22,10 +27,5 @@
             "type": "component",
             "component": "hotel.animal"
         }
-    },
-    "collectionName": "components_travelline_policy",
-    "info": {
-        "displayName": "Правила отеля",
-        "icon": "information"
     }
 }

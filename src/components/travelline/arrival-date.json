@@ -1,0 +1,17 @@
+{
+    "collectionName": "components_travelline_arrival_date",
+    "info": {
+        "displayName": "Даты прибытия(для отмены)"
+    },
+    "attributes": {
+        "startDate": {
+            "type": "string"
+        },
+        "endDate": {
+            "type": "string"
+        },
+        "isEndless": {
+            "type": "boolean"
+        }
+    }
+}

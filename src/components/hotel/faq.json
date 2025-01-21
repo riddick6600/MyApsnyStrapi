@@ -1,4 +1,8 @@
 {
+    "collectionName": "components_hotel_faq",
+    "info": {
+        "displayName": "Вопросы и ответы"
+    },
     "attributes": {
         "name": {
             "type": "text"
@@ -7,13 +11,11 @@
             "type": "richtext"
         },
         "image": {
-            "allowedTypes": ["images"],
+            "allowedTypes": [
+                "images"
+            ],
             "type": "media",
             "multiple": false
         }
-    },
-    "collectionName": "components_hotel_faq",
-    "info": {
-        "displayName": "Вопросы и ответы"
     }
 }

@@ -2,10 +2,8 @@
     "collectionName": "components_components_components",
     "info": {
         "displayName": "component",
-        "icon": "rocket",
-        "description": ""
+        "icon": "rocket"
     },
-    "options": {},
     "attributes": {
         "name": {
             "type": "string"

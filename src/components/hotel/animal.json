@@ -1,4 +1,8 @@
 {
+    "collectionName": "components_hotel_animal",
+    "info": {
+        "displayName": "Животные"
+    },
     "attributes": {
         "isAllowed": {
             "type": "boolean"
@@ -15,9 +19,5 @@
         "price": {
             "type": "integer"
         }
-    },
-    "collectionName": "components_hotel_animal",
-    "info": {
-        "displayName": "Животные"
     }
 }

@@ -4,11 +4,7 @@
     "info": {
         "singularName": "review",
         "pluralName": "reviews",
-        "displayName": "Отзыв",
-        "description": ""
-    },
-    "options": {
-        "draftAndPublish": false
+        "displayName": "Отзыв"
     },
     "attributes": {
         "title": {

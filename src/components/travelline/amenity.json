@@ -1,4 +1,9 @@
 {
+    "collectionName": "components_travelline_amenity",
+    "info": {
+        "displayName": "Удобство",
+        "icon": "star"
+    },
     "attributes": {
         "name": {
             "type": "string"
@@ -24,10 +29,5 @@
         "description": {
             "type": "string"
         }
-    },
-    "collectionName": "components_travelline_amenity",
-    "info": {
-        "displayName": "Удобство",
-        "icon": "star"
     }
 }

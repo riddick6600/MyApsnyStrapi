@@ -2,10 +2,8 @@
     "collectionName": "components_page_pages",
     "info": {
         "displayName": "page",
-        "icon": "monitor",
-        "description": ""
+        "icon": "monitor"
     },
-    "options": {},
     "attributes": {
         "title": {
             "type": "string"

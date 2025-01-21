@@ -4,13 +4,8 @@
     "info": {
         "singularName": "page",
         "pluralName": "pages",
-        "displayName": "Страницы",
-        "description": ""
+        "displayName": "Страницы"
     },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {},
     "attributes": {
         "name": {
             "type": "string"

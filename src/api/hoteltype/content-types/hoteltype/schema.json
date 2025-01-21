@@ -4,13 +4,8 @@
     "info": {
         "singularName": "hoteltype",
         "pluralName": "hoteltypes",
-        "displayName": "Типы жилья",
-        "description": ""
+        "displayName": "Типы отеля"
     },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {},
     "attributes": {
         "name": {
             "type": "string",

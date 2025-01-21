@@ -6,10 +6,6 @@
         "pluralName": "amenities",
         "displayName": "Удобства"
     },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {},
     "attributes": {
         "name": {
             "type": "string",
@@ -22,7 +18,9 @@
             "unique": true
         },
         "image": {
-            "allowedTypes": ["images"],
+            "allowedTypes": [
+                "images"
+            ],
             "type": "media",
             "multiple": false
         }

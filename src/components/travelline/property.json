@@ -17,12 +17,16 @@
         "images": {
             "type": "media",
             "multiple": true,
-            "required": false,
-            "allowedTypes": ["images"]
+            "allowedTypes": [
+                "images"
+            ]
         },
         "stayUnitKind": {
             "type": "enumeration",
-            "enum": ["NightRate", "DailyRate"],
+            "enum": [
+                "NightRate",
+                "DailyRate"
+            ],
             "default": "NightRate"
         },
         "contactInfo": {

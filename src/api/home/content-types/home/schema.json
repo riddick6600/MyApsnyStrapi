@@ -4,13 +4,8 @@
     "info": {
         "singularName": "home",
         "pluralName": "homes",
-        "displayName": "home",
-        "description": ""
+        "displayName": "home"
     },
-    "options": {
-        "draftAndPublish": false
-    },
-    "pluginOptions": {},
     "attributes": {
         "name": {
             "type": "string"
@@ -21,15 +16,23 @@
         },
         "first": {
             "type": "dynamiczone",
-            "components": ["components.place-card", "components.home-block"]
+            "components": [
+                "components.place-card",
+                "components.home-block"
+            ]
         },
         "second": {
             "type": "dynamiczone",
-            "components": ["components.place-card"]
+            "components": [
+                "components.place-card"
+            ]
         },
         "third": {
             "type": "dynamiczone",
-            "components": ["components.place-card", "components.home-block"]
+            "components": [
+                "components.place-card",
+                "components.home-block"
+            ]
         }
     }
 }

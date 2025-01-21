@@ -1,4 +1,9 @@
 {
+    "collectionName": "components_travelline_phone",
+    "info": {
+        "displayName": "Телефон",
+        "icon": "phone"
+    },
     "attributes": {
         "phoneNumber": {
             "type": "string"
@@ -6,7 +11,6 @@
         "techType": {
             "type": "enumeration",
             "enum": [
-                "",
                 "mobile",
                 "landline",
                 "fax",
@@ -19,12 +23,7 @@
             "default": "whatsapp"
         },
         "remark": {
-            "type": "string"
+            "type": "text"
         }
-    },
-    "collectionName": "components_travelline_phone",
-    "info": {
-        "displayName": "Телефон",
-        "icon": "phone"
     }
 }
