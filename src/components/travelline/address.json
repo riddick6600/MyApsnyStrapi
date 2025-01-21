@@ -6,24 +6,6 @@
     "description": ""
   },
   "attributes": {
-    "postalCode": {
-      "type": "string"
-    },
-    "countryCode": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "regionId": {
-      "type": "string"
-    },
-    "cityName": {
-      "type": "string"
-    },
-    "cityId": {
-      "type": "string"
-    },
     "addressLine": {
       "type": "string"
     },
@@ -38,6 +20,24 @@
       "max": 180
     },
     "remark": {
+      "type": "string"
+    },
+    "cityName": {
+      "type": "string"
+    },
+    "cityId": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "regionId": {
       "type": "string"
     }
   }

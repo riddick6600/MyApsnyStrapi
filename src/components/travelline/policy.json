@@ -5,6 +5,22 @@
     },
     "checkOutTime": {
       "type": "time"
+    },
+    "minLengthOfStay": {
+      "type": "integer"
+    },
+    "minDaysBeforeArrival": {
+      "type": "integer"
+    },
+    "maxDaysBeforeArrival": {
+      "type": "integer"
+    },
+    "smoking": {
+      "type": "string"
+    },
+    "animal": {
+      "type": "component",
+      "component": "hotel.animal"
     }
   },
   "collectionName": "components_travelline_policy",

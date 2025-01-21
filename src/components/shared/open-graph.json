@@ -4,7 +4,6 @@
     "displayName": "openGraph",
     "icon": "project-diagram"
   },
-  "options": {},
   "attributes": {
     "og:title": {
       "type": "string",

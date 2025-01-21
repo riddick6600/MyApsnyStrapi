@@ -16,11 +16,12 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "text"
@@ -28,6 +29,9 @@
     "page": {
       "type": "component",
       "component": "page.page"
+    },
+    "isCity": {
+      "type": "boolean"
     }
   }
 }

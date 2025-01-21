@@ -14,6 +14,23 @@
     "name": {
       "type": "string"
     },
+    "isActive": {
+      "type": "boolean"
+    },
+    "isRecommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "hotelType": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hoteltype.hoteltype"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
+    },
     "description": {
       "type": "richtext"
     },
@@ -33,10 +50,34 @@
         "images"
       ]
     },
+    "distanceToSea": {
+      "type": "integer"
+    },
+    "distanceToCenter": {
+      "type": "integer"
+    },
+    "roomCount": {
+      "type": "integer"
+    },
+    "constructionYear": {
+      "type": "integer"
+    },
     "place": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::place.place"
+    },
+    "amenities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::amenity.amenity"
+    },
+    "remark": {
+      "type": "string"
+    },
+    "contacts": {
+      "type": "component",
+      "component": "hotel.contact-info"
     },
     "page": {
       "type": "component",
@@ -47,37 +88,13 @@
       "type": "component",
       "component": "travelline.hotel"
     },
-    "typeOfAccommodation": {
-      "type": "string"
-    },
-    "location": {
+    "address": {
       "type": "component",
       "component": "travelline.address"
-    },
-    "distanceToSea": {
-      "type": "integer"
-    },
-    "distanceToCenter": {
-      "type": "integer"
-    },
-    "amenities": {
-      "type": "component",
-      "repeatable": true,
-      "component": "travelline.amenity"
     },
     "policy": {
       "type": "component",
       "component": "travelline.policy"
-    },
-    "numberOfRooms": {
-      "type": "integer"
-    },
-    "yearOfConstruction": {
-      "type": "integer"
-    },
-    "paymentAndBooking": {
-      "label": "Оплата и бронирование",
-      "type": "string"
     },
     "faq": {
       "label": "Часто задаваемые вопросы",
@@ -88,14 +105,6 @@
       "type": "component",
       "component": "travelline.room-type",
       "repeatable": true
-    },
-    "hotelType": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::hoteltype.hoteltype"
-    },
-    "isActive": {
-      "type": "boolean"
     }
   }
 }
