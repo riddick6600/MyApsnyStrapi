@@ -5,10 +5,7 @@
         "icon": "calendar-minus"
     },
     "attributes": {
-        "from": {
-            "type": "integer"
-        },
-        "to": {
+        "day": {
             "type": "integer"
         },
         "value": {

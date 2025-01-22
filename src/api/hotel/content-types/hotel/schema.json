@@ -7,17 +7,15 @@
         "displayName": "Отели",
         "description": "Управление Отелями"
     },
+    "options": {
+        "draftAndPublish": false
+    },
     "attributes": {
         "name": {
             "type": "string"
         },
         "isActive": {
             "type": "boolean"
-        },
-        "stars": {
-            "type": "integer",
-            "min": 0,
-            "max": 5
         },
         "isRecommended": {
             "type": "boolean",
@@ -38,6 +36,11 @@
         "partnerPrepaid": {
             "type": "integer",
             "default": 0
+        },
+        "stars": {
+            "type": "integer",
+            "min": 0,
+            "max": 5
         },
         "distanceToSea": {
             "type": "integer"
@@ -69,40 +72,41 @@
             "relation": "oneToMany",
             "target": "api::amenity.amenity"
         },
-        "images": {
-            "type": "media",
-            "multiple": true,
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "content": {
-            "type": "richtext"
-        },
-        "faq": {
-            "type": "component",
-            "component": "hotel.faq"
-        },
-        "contacts": {
-            "type": "component",
-            "component": "hotel.contact"
+        "remark": {
+            "type": "text"
         },
         "address": {
             "type": "component",
             "component": "hotel.address"
         },
+        "contacts": {
+            "type": "component",
+            "component": "hotel.contact"
+        },
         "policy": {
             "type": "component",
             "component": "travelline.policy"
         },
-        "roomTypes": {
+        "faq": {
             "type": "component",
-            "component": "hotel.room-type",
-            "repeatable": true
+            "component": "hotel.faq"
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
         },
         "ratePlans": {
             "type": "component",
             "component": "hotel.rate-plan",
+            "repeatable": true
+        },
+        "roomTypes": {
+            "type": "component",
+            "component": "hotel.room-type",
             "repeatable": true
         },
         "cancellationRules": {
@@ -118,9 +122,6 @@
             "displayName": "travelline",
             "type": "component",
             "component": "travelline.property"
-        },
-        "remark": {
-            "type": "text"
         }
     }
 }

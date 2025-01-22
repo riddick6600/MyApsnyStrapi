@@ -19,18 +19,23 @@
             "relation": "oneToMany",
             "target": "api::amenity.amenity"
         },
+        "size": {
+            "type": "string"
+        },
+        "category": {
+            "type": "string"
+        },
+        "beds": {
+            "type": "component",
+            "component": "hotel.bed",
+            "repeatable": true
+        },
         "images": {
             "type": "media",
             "multiple": true,
             "allowedTypes": [
                 "images"
             ]
-        },
-        "size": {
-            "type": "integer"
-        },
-        "category": {
-            "type": "string"
         },
         "occupancy": {
             "type": "component",
@@ -40,9 +45,6 @@
             "type": "component",
             "component": "hotel.placement",
             "repeatable": true
-        },
-        "position": {
-            "type": "integer"
         }
     }
 }

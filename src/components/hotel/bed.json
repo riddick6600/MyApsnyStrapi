@@ -1,0 +1,14 @@
+{
+    "collectionName": "components_hotel_bed",
+    "info": {
+        "displayName": "Кровать"
+    },
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "value": {
+            "type": "integer"
+        }
+    }
+}
