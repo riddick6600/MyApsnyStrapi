@@ -89,7 +89,8 @@
         },
         "faq": {
             "type": "component",
-            "component": "hotel.faq"
+            "component": "hotel.faq",
+            "repeatable": true
         },
         "images": {
             "type": "media",
