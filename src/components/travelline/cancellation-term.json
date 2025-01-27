@@ -1,7 +1,7 @@
 {
     "collectionName": "components_travelline_cancellation_terms",
     "info": {
-        "name": "cancellation-term",
+        "displayName": "Правила отмены TL",
         "icon": "calendar-minus"
     },
     "attributes": {

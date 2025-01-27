@@ -1,7 +1,7 @@
 {
     "collectionName": "components_travelline_cancellation_rules",
     "info": {
-        "name": "cancellation-rule",
+        "displayName": "Правила отмены Обертка",
         "icon": "calendar-times"
     },
     "attributes": {

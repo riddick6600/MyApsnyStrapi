@@ -1,7 +1,7 @@
 {
     "collectionName": "components_hotel_cancellation_terms",
     "info": {
-        "name": "cancellation-term",
+        "displayName": "Правила отмены",
         "icon": "calendar-minus"
     },
     "attributes": {

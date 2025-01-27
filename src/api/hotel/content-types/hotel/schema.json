@@ -92,10 +92,15 @@
             "component": "hotel.faq",
             "repeatable": true
         },
+        "logo": {
+            "type": "media",
+            "allowedTypes": [
+                "images"
+            ]
+        },
         "images": {
             "type": "media",
             "multiple": true,
-            "required": false,
             "allowedTypes": [
                 "images"
             ]

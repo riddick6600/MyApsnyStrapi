@@ -2,14 +2,16 @@
     "collectionName": "components_travelline_property",
     "info": {
         "displayName": "TravelLine Данные Отеля",
-        "icon": "gate"
+        "icon": "gate",
+        "description": ""
     },
     "attributes": {
         "name": {
             "type": "string"
         },
         "externalId": {
-            "type": "string"
+            "type": "string",
+            "unique": true
         },
         "description": {
             "type": "text"
@@ -17,6 +19,7 @@
         "images": {
             "type": "media",
             "multiple": true,
+            "required": false,
             "allowedTypes": [
                 "images"
             ]

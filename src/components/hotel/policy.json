@@ -1,0 +1,31 @@
+{
+    "collectionName": "components_hotel_policy",
+    "info": {
+        "displayName": "Правила отеля",
+        "icon": "information"
+    },
+    "attributes": {
+        "checkInTime": {
+            "type": "time"
+        },
+        "checkOutTime": {
+            "type": "time"
+        },
+        "minLengthOfStay": {
+            "type": "integer"
+        },
+        "minDaysBeforeArrival": {
+            "type": "integer"
+        },
+        "maxDaysBeforeArrival": {
+            "type": "integer"
+        },
+        "smoking": {
+            "type": "string"
+        },
+        "animal": {
+            "type": "component",
+            "component": "hotel.animal"
+        }
+    }
+}
