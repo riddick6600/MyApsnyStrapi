@@ -39,7 +39,7 @@
                 "home.card"
             ]
         },
-        "hotelsTitle": {
+        "placesTitle": {
             "type": "string"
         },
         "places": {
@@ -48,9 +48,8 @@
                 "home.place"
             ]
         },
-        "page": {
-            "type": "component",
-            "component": "page.page"
+        "hotelsTitle": {
+            "type": "string"
         },
         "hotels": {
             "type": "dynamiczone",
@@ -59,8 +58,9 @@
                 "home.hoteltype"
             ]
         },
-        "placesTitle": {
-            "type": "string"
+        "page": {
+            "type": "component",
+            "component": "page.page"
         }
     }
 }
