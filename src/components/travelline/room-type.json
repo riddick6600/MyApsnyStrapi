@@ -14,11 +14,6 @@
         "description": {
             "type": "text"
         },
-        "amenities": {
-            "type": "component",
-            "component": "travelline.amenity",
-            "repeatable": true
-        },
         "images": {
             "type": "media",
             "multiple": true,
@@ -51,6 +46,11 @@
         },
         "position": {
             "type": "integer"
+        },
+        "amenities": {
+            "type": "component",
+            "component": "travelline.amenity",
+            "repeatable": true
         }
     }
 }

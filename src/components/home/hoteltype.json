@@ -1,0 +1,21 @@
+{
+    "collectionName": "components_home_hoteltype",
+    "info": {
+        "displayName": "Карточка категории отеля"
+    },
+    "attributes": {
+        "hoteltype": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::hoteltype.hoteltype"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        }
+    }
+}

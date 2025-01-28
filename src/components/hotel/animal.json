@@ -18,6 +18,9 @@
         },
         "price": {
             "type": "integer"
+        },
+        "description": {
+            "type": "string"
         }
     }
 }

@@ -10,6 +10,12 @@
         "name": {
             "type": "string"
         },
+        "isCity": {
+            "type": "boolean"
+        },
+        "description": {
+            "type": "text"
+        },
         "image": {
             "type": "media",
             "multiple": false,
@@ -17,15 +23,9 @@
                 "images"
             ]
         },
-        "description": {
-            "type": "text"
-        },
         "page": {
             "type": "component",
             "component": "page.page"
-        },
-        "isCity": {
-            "type": "boolean"
         }
     }
 }

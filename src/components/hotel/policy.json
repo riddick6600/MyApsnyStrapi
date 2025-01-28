@@ -6,18 +6,15 @@
     },
     "attributes": {
         "checkInTime": {
-            "type": "time"
+            "type": "string"
         },
         "checkOutTime": {
-            "type": "time"
+            "type": "string"
         },
         "minLengthOfStay": {
             "type": "integer"
         },
         "minDaysBeforeArrival": {
-            "type": "integer"
-        },
-        "maxDaysBeforeArrival": {
             "type": "integer"
         },
         "smoking": {

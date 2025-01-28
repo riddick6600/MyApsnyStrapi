@@ -34,8 +34,7 @@
             "default": 13
         },
         "partnerPrepaid": {
-            "type": "integer",
-            "default": 0
+            "type": "integer"
         },
         "stars": {
             "type": "integer",
@@ -85,7 +84,7 @@
         },
         "policy": {
             "type": "component",
-            "component": "travelline.policy"
+            "component": "hotel.policy"
         },
         "faq": {
             "type": "component",

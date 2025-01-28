@@ -1,7 +1,7 @@
 {
-    "collectionName": "components_components_place_cards",
+    "collectionName": "components_home_place",
     "info": {
-        "displayName": "PlaceCard",
+        "displayName": "Карточка Местоположения",
         "icon": "pin"
     },
     "attributes": {

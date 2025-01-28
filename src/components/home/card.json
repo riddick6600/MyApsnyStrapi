@@ -1,8 +1,9 @@
 {
-    "collectionName": "components_components_home_blocks",
+    "collectionName": "components_home_card",
     "info": {
-        "displayName": "HomeCard",
-        "icon": "file"
+        "displayName": "Стандартная карточка",
+        "icon": "file",
+        "description": ""
     },
     "attributes": {
         "name": {
@@ -14,6 +15,7 @@
         "image": {
             "type": "media",
             "multiple": false,
+            "required": false,
             "allowedTypes": [
                 "images"
             ]

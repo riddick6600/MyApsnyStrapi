@@ -2,7 +2,8 @@
     "collectionName": "components_page_pages",
     "info": {
         "displayName": "page",
-        "icon": "monitor"
+        "icon": "monitor",
+        "description": ""
     },
     "attributes": {
         "title": {
@@ -10,7 +11,7 @@
         },
         "slug": {
             "type": "string",
-            "unique_щаа": true
+            "unique": true
         },
         "content": {
             "type": "richtext"

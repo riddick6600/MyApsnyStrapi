@@ -4,35 +4,63 @@
     "info": {
         "singularName": "home",
         "pluralName": "homes",
-        "displayName": "home"
+        "displayName": "Главная",
+        "description": "Данные блоков на главной"
+    },
+    "options": {
+        "draftAndPublish": false
     },
     "attributes": {
         "name": {
             "type": "string"
         },
+        "slogan1": {
+            "type": "string"
+        },
+        "offers": {
+            "type": "dynamiczone",
+            "components": [
+                "home.place",
+                "home.article",
+                "home.hotel",
+                "home.card"
+            ],
+            "required": false
+        },
+        "slogan2": {
+            "type": "string"
+        },
+        "advantagesTitle": {
+            "type": "string"
+        },
+        "advantages": {
+            "type": "dynamiczone",
+            "components": [
+                "home.card"
+            ]
+        },
+        "hotelsTitle": {
+            "type": "string"
+        },
+        "places": {
+            "type": "dynamiczone",
+            "components": [
+                "home.place"
+            ]
+        },
         "page": {
             "type": "component",
             "component": "page.page"
         },
-        "first": {
+        "hotels": {
             "type": "dynamiczone",
             "components": [
-                "components.place-card",
-                "components.home-block"
+                "home.hotel",
+                "home.hoteltype"
             ]
         },
-        "second": {
-            "type": "dynamiczone",
-            "components": [
-                "components.place-card"
-            ]
-        },
-        "third": {
-            "type": "dynamiczone",
-            "components": [
-                "components.place-card",
-                "components.home-block"
-            ]
+        "placesTitle": {
+            "type": "string"
         }
     }
 }
