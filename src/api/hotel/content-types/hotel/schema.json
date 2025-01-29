@@ -47,6 +47,9 @@
         "distanceToCenter": {
             "type": "integer"
         },
+        "distanceToBorder": {
+            "type": "integer"
+        },
         "roomCount": {
             "type": "integer"
         },

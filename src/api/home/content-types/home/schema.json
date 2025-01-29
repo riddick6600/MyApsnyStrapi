@@ -1,66 +1,67 @@
 {
-    "kind": "singleType",
-    "collectionName": "homes",
-    "info": {
-        "singularName": "home",
-        "pluralName": "homes",
-        "displayName": "Главная",
-        "description": "Данные блоков на главной"
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Главная",
+    "description": "Данные блоков на главной"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "options": {
-        "draftAndPublish": false
+    "slogan1": {
+      "type": "string"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "slogan1": {
-            "type": "string"
-        },
-        "offers": {
-            "type": "dynamiczone",
-            "components": [
-                "home.place",
-                "home.article",
-                "home.hotel",
-                "home.card"
-            ],
-            "required": false
-        },
-        "slogan2": {
-            "type": "string"
-        },
-        "advantagesTitle": {
-            "type": "string"
-        },
-        "advantages": {
-            "type": "dynamiczone",
-            "components": [
-                "home.card"
-            ]
-        },
-        "placesTitle": {
-            "type": "string"
-        },
-        "places": {
-            "type": "dynamiczone",
-            "components": [
-                "home.place"
-            ]
-        },
-        "hotelsTitle": {
-            "type": "string"
-        },
-        "hotels": {
-            "type": "dynamiczone",
-            "components": [
-                "home.hotel",
-                "home.hoteltype"
-            ]
-        },
-        "page": {
-            "type": "component",
-            "component": "page.page"
-        }
+    "offers": {
+      "type": "dynamiczone",
+      "components": [
+        "home.place",
+        "home.article",
+        "home.hotel",
+        "home.card",
+        "home.hoteltype"
+      ],
+      "required": false
+    },
+    "slogan2": {
+      "type": "string"
+    },
+    "advantagesTitle": {
+      "type": "string"
+    },
+    "advantages": {
+      "type": "dynamiczone",
+      "components": [
+        "home.card"
+      ]
+    },
+    "placesTitle": {
+      "type": "string"
+    },
+    "places": {
+      "type": "dynamiczone",
+      "components": [
+        "home.place"
+      ]
+    },
+    "hotelsTitle": {
+      "type": "string"
+    },
+    "hotels": {
+      "type": "dynamiczone",
+      "components": [
+        "home.hotel",
+        "home.hoteltype"
+      ]
+    },
+    "page": {
+      "type": "component",
+      "component": "page.page"
     }
+  }
 }
