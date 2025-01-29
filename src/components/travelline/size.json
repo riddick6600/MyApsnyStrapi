@@ -1,15 +1,15 @@
 {
-    "collectionName": "components_travelline_size",
-    "info": {
-        "displayName": "Размер",
-        "icon": "size"
+  "collectionName": "components_travelline_size",
+  "info": {
+    "displayName": "Размер",
+    "icon": "size"
+  },
+  "attributes": {
+    "value": {
+      "type": "integer"
     },
-    "attributes": {
-        "value": {
-            "type": "integer"
-        },
-        "unit": {
-            "type": "string"
-        }
+    "unit": {
+      "type": "string"
     }
+  }
 }

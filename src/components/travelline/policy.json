@@ -1,15 +1,15 @@
 {
-    "collectionName": "components_travelline_policy",
-    "info": {
-        "displayName": "Правила отеля (TL)",
-        "icon": "information"
+  "collectionName": "components_travelline_policy",
+  "info": {
+    "displayName": "Правила отеля (TL)",
+    "icon": "information"
+  },
+  "attributes": {
+    "checkInTime": {
+      "type": "string"
     },
-    "attributes": {
-        "checkInTime": {
-            "type": "string"
-        },
-        "checkOutTime": {
-            "type": "string"
-        }
+    "checkOutTime": {
+      "type": "string"
     }
+  }
 }

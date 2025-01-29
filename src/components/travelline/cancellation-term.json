@@ -1,54 +1,38 @@
 {
-    "collectionName": "components_travelline_cancellation_terms",
-    "info": {
-        "displayName": "Правила отмены TL",
-        "icon": "calendar-minus"
+  "collectionName": "components_travelline_cancellation_terms",
+  "info": {
+    "displayName": "Правила отмены TL",
+    "icon": "calendar-minus"
+  },
+  "attributes": {
+    "beforeArrivalMatching": {
+      "type": "enumeration",
+      "enum": ["NoMatter", "AtLeast", "NoMoreThan", "Between"]
     },
-    "attributes": {
-        "beforeArrivalMatching": {
-            "type": "enumeration",
-            "enum": [
-                "NoMatter",
-                "AtLeast",
-                "NoMoreThan",
-                "Between"
-            ]
-        },
-        "beforeArrivalUnit": {
-            "type": "enumeration",
-            "enum": [
-                "None",
-                "Day",
-                "Hour"
-            ]
-        },
-        "beforeArrivalValue": {
-            "type": "integer"
-        },
-        "beforeArrivalValueMax": {
-            "type": "integer"
-        },
-        "penaltyCalculationMethod": {
-            "type": "enumeration",
-            "enum": [
-                "PrepaymentPercent",
-                "FirstNights",
-                "NoPenalty",
-                "FirstNightPercent",
-                "Percent",
-                "Fixed"
-            ]
-        },
-        "penaltyValue": {
-            "type": "float"
-        },
-        "penaltyValueCurrency": {
-            "type": "string"
-        },
-        "arrivalDates": {
-            "type": "component",
-            "repeatable": true,
-            "component": "travelline.arrival-date"
-        }
+    "beforeArrivalUnit": {
+      "type": "enumeration",
+      "enum": ["None", "Day", "Hour"]
+    },
+    "beforeArrivalValue": {
+      "type": "integer"
+    },
+    "beforeArrivalValueMax": {
+      "type": "integer"
+    },
+    "penaltyCalculationMethod": {
+      "type": "enumeration",
+      "enum": ["PrepaymentPercent", "FirstNights", "NoPenalty", "FirstNightPercent", "Percent", "Fixed"]
+    },
+    "penaltyValue": {
+      "type": "float"
+    },
+    "penaltyValueCurrency": {
+      "type": "string"
+    },
+    "arrivalDates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "travelline.arrival-date"
     }
+  }
 }

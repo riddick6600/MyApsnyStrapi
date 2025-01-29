@@ -1,35 +1,50 @@
 {
-    "kind": "collectionType",
-    "collectionName": "reviews",
-    "info": {
-        "singularName": "review",
-        "pluralName": "reviews",
-        "displayName": "Отзыв"
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Отзыв",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "isVerified": {
+      "type": "boolean",
+      "default": false
     },
-    "attributes": {
-        "title": {
-            "type": "string"
-        },
-        "content": {
-            "type": "text"
-        },
-        "rating": {
-            "type": "integer",
-            "min": 1,
-            "max": 5
-        },
-        "author": {
-            "type": "string"
-        },
-        "verified": {
-            "type": "boolean",
-            "default": false
-        },
-        "verificationDate": {
-            "type": "datetime"
-        },
-        "response": {
-            "type": "string"
-        }
+    "generatedByAI": {
+      "type": "boolean",
+      "default": false,
+      "private": true
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "rating": {
+      "type": "integer",
+      "min": 1,
+      "max": 5
+    },
+    "author": {
+      "type": "string"
+    },
+    "verificationDate": {
+      "type": "datetime"
+    },
+    "verifiedBy": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user",
+      "private": true
     }
+  }
 }

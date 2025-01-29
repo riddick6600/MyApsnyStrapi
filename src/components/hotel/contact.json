@@ -1,20 +1,20 @@
 {
-    "collectionName": "components_hotel_contact",
-    "info": {
-        "displayName": "Контактная информация"
+  "collectionName": "components_hotel_contact",
+  "info": {
+    "displayName": "Контактная информация"
+  },
+  "attributes": {
+    "phoneForCrm": {
+      "type": "string"
     },
-    "attributes": {
-        "phoneForCrm": {
-            "type": "string"
-        },
-        "emailForCrm": {
-            "type": "string"
-        },
-        "phoneForClient": {
-            "type": "string"
-        },
-        "emailForClient": {
-            "type": "string"
-        }
+    "emailForCrm": {
+      "type": "string"
+    },
+    "phoneForClient": {
+      "type": "string"
+    },
+    "emailForClient": {
+      "type": "string"
     }
+  }
 }

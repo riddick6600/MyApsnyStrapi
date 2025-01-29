@@ -1,35 +1,36 @@
 {
-    "kind": "collectionType",
-    "collectionName": "categories",
-    "info": {
-        "singularName": "category",
-        "pluralName": "categories",
-        "displayName": "Категории Блога",
-        "description": "Organize your content into categories"
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "Категории Блога",
+    "description": "Organize your content into categories"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "description": {
-            "type": "text"
-        },
-        "image": {
-            "allowedTypes": [
-                "images"
-            ],
-            "type": "media",
-            "multiple": false
-        },
-        "articles": {
-            "type": "relation",
-            "relation": "manyToMany",
-            "target": "api::article.article",
-            "mappedBy": "categories"
-        },
-        "page": {
-            "type": "component",
-            "component": "page.page"
-        }
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "image": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "mappedBy": "categories"
+    },
+    "page": {
+      "type": "component",
+      "component": "page.page"
     }
+  }
 }

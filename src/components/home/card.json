@@ -1,27 +1,27 @@
 {
-    "collectionName": "components_home_card",
-    "info": {
-        "displayName": "Стандартная карточка",
-        "icon": "file",
-        "description": ""
+  "collectionName": "components_home_card",
+  "info": {
+    "displayName": "Стандартная карточка",
+    "icon": "file",
+    "description": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "description": {
-            "type": "string"
-        },
-        "image": {
-            "type": "media",
-            "multiple": false,
-            "required": false,
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "href": {
-            "type": "string"
-        }
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "href": {
+      "type": "string"
     }
+  }
 }

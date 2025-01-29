@@ -1,19 +1,19 @@
 {
-    "collectionName": "components_hotel_rate_plan",
-    "info": {
-        "displayName": "Тарифный план",
-        "icon": "dollar-sign",
-        "description": "Тарифный план отеля"
+  "collectionName": "components_hotel_rate_plan",
+  "info": {
+    "displayName": "Тарифный план",
+    "icon": "dollar-sign",
+    "description": "Тарифный план отеля"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "externalId": {
-            "type": "string"
-        },
-        "description": {
-            "type": "text"
-        }
+    "externalId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
+  }
 }

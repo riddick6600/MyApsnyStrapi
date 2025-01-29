@@ -1,15 +1,15 @@
 {
-    "collectionName": "components_hotel_cancellation_terms",
-    "info": {
-        "displayName": "Правила отмены",
-        "icon": "calendar-minus"
+  "collectionName": "components_hotel_cancellation_terms",
+  "info": {
+    "displayName": "Правила отмены",
+    "icon": "calendar-minus"
+  },
+  "attributes": {
+    "day": {
+      "type": "integer"
     },
-    "attributes": {
-        "day": {
-            "type": "integer"
-        },
-        "value": {
-            "type": "integer"
-        }
+    "value": {
+      "type": "integer"
     }
+  }
 }

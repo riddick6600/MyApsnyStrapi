@@ -1,31 +1,32 @@
 {
-    "kind": "collectionType",
-    "collectionName": "places",
-    "info": {
-        "singularName": "place",
-        "pluralName": "places",
-        "displayName": "Местоположение"
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "singularName": "place",
+    "pluralName": "places",
+    "displayName": "Местоположение"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "isCity": {
-            "type": "boolean"
-        },
-        "description": {
-            "type": "text"
-        },
-        "image": {
-            "type": "media",
-            "multiple": false,
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "page": {
-            "type": "component",
-            "component": "page.page"
-        }
+    "isCity": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "page": {
+      "type": "component",
+      "component": "page.page"
     }
+  }
 }

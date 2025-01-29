@@ -1,50 +1,48 @@
 {
-    "collectionName": "components_hotel_room_type",
-    "info": {
-        "displayName": "Категория номера",
-        "icon": "bed"
+  "collectionName": "components_hotel_room_type",
+  "info": {
+    "displayName": "Категория номера",
+    "icon": "bed"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "externalId": {
-            "type": "string"
-        },
-        "description": {
-            "type": "text"
-        },
-        "amenities": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::amenity.amenity"
-        },
-        "size": {
-            "type": "string"
-        },
-        "count": {
-            "type": "string"
-        },
-        "beds": {
-            "type": "component",
-            "component": "hotel.bed",
-            "repeatable": true
-        },
-        "images": {
-            "type": "media",
-            "multiple": true,
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "occupancy": {
-            "type": "component",
-            "component": "travelline.occupancy"
-        },
-        "placements": {
-            "type": "component",
-            "component": "hotel.placement",
-            "repeatable": true
-        }
+    "externalId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "amenities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::amenity.amenity"
+    },
+    "size": {
+      "type": "string"
+    },
+    "count": {
+      "type": "string"
+    },
+    "beds": {
+      "type": "component",
+      "component": "hotel.bed",
+      "repeatable": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": ["images"]
+    },
+    "occupancy": {
+      "type": "component",
+      "component": "travelline.occupancy"
+    },
+    "placements": {
+      "type": "component",
+      "component": "hotel.placement",
+      "repeatable": true
     }
+  }
 }

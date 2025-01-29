@@ -1,135 +1,144 @@
 {
-    "kind": "collectionType",
-    "collectionName": "hotels",
-    "info": {
-        "singularName": "hotel",
-        "pluralName": "hotels",
-        "displayName": "Отели",
-        "description": "Управление Отелями"
+  "kind": "collectionType",
+  "collectionName": "hotels",
+  "info": {
+    "singularName": "hotel",
+    "pluralName": "hotels",
+    "displayName": "Отели",
+    "description": "Управление Отелями"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "options": {
-        "draftAndPublish": false
+    "isActive": {
+      "type": "boolean"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "isActive": {
-            "type": "boolean"
-        },
-        "isRecommended": {
-            "type": "boolean",
-            "default": false
-        },
-        "isInstant": {
-            "type": "boolean",
-            "default": false
-        },
-        "canFullPayment": {
-            "type": "boolean",
-            "default": false
-        },
-        "prePaymentPercent": {
-            "type": "integer",
-            "default": 13
-        },
-        "partnerPrepaid": {
-            "type": "integer"
-        },
-        "stars": {
-            "type": "integer",
-            "min": 0,
-            "max": 5
-        },
-        "distanceToSea": {
-            "type": "integer"
-        },
-        "distanceToCenter": {
-            "type": "integer"
-        },
-        "distanceToBorder": {
-            "type": "integer"
-        },
-        "roomCount": {
-            "type": "integer"
-        },
-        "constructionYear": {
-            "type": "integer"
-        },
-        "description": {
-            "type": "text"
-        },
-        "hotelType": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::hoteltype.hoteltype"
-        },
-        "city": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::place.place"
-        },
-        "amenities": {
-            "type": "relation",
-            "relation": "oneToMany",
-            "target": "api::amenity.amenity"
-        },
-        "remark": {
-            "type": "text"
-        },
-        "address": {
-            "type": "component",
-            "component": "hotel.address"
-        },
-        "contacts": {
-            "type": "component",
-            "component": "hotel.contact"
-        },
-        "policy": {
-            "type": "component",
-            "component": "hotel.policy"
-        },
-        "faq": {
-            "type": "component",
-            "component": "hotel.faq",
-            "repeatable": true
-        },
-        "logo": {
-            "type": "media",
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "images": {
-            "type": "media",
-            "multiple": true,
-            "allowedTypes": [
-                "images"
-            ]
-        },
-        "ratePlans": {
-            "type": "component",
-            "component": "hotel.rate-plan",
-            "repeatable": true
-        },
-        "roomTypes": {
-            "type": "component",
-            "component": "hotel.room-type",
-            "repeatable": true
-        },
-        "cancellationRules": {
-            "type": "component",
-            "repeatable": true,
-            "component": "hotel.cancellation-term"
-        },
-        "page": {
-            "type": "component",
-            "component": "page.page"
-        },
-        "travelline": {
-            "displayName": "travelline",
-            "type": "component",
-            "component": "travelline.property"
-        }
+    "sort": {
+      "type": "integer"
+    },
+    "isRecommended": {
+      "type": "boolean",
+      "default": false
+    },
+    "isInstant": {
+      "type": "boolean",
+      "default": false
+    },
+    "canFullPayment": {
+      "type": "boolean",
+      "default": false
+    },
+    "prePaymentPercent": {
+      "type": "integer",
+      "default": 13
+    },
+    "partnerPrepaid": {
+      "type": "integer"
+    },
+    "stars": {
+      "type": "integer",
+      "min": 0,
+      "max": 5
+    },
+    "distanceToSea": {
+      "type": "integer"
+    },
+    "distanceToCenter": {
+      "type": "integer"
+    },
+    "distanceToBorder": {
+      "type": "integer"
+    },
+    "roomCount": {
+      "type": "integer"
+    },
+    "constructionYear": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "hotelType": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hoteltype.hoteltype"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
+    },
+    "amenities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::amenity.amenity"
+    },
+    "remark": {
+      "type": "text"
+    },
+    "address": {
+      "type": "component",
+      "component": "hotel.address"
+    },
+    "contacts": {
+      "type": "component",
+      "component": "hotel.contact"
+    },
+    "policy": {
+      "type": "component",
+      "component": "hotel.policy"
+    },
+    "faq": {
+      "type": "component",
+      "component": "hotel.faq",
+      "repeatable": true
+    },
+    "logo": {
+      "type": "media",
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ratePlans": {
+      "type": "component",
+      "component": "hotel.rate-plan",
+      "repeatable": true
+    },
+    "roomTypes": {
+      "type": "component",
+      "component": "hotel.room-type",
+      "repeatable": true
+    },
+    "cancellationRules": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hotel.cancellation-term"
+    },
+    "page": {
+      "type": "component",
+      "component": "page.page"
+    },
+    "travelline": {
+      "type": "component",
+      "component": "travelline.property"
+    },
+    "wordpress": {
+      "type": "json",
+      "private": true
     }
+  }
 }

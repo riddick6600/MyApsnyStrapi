@@ -1,21 +1,18 @@
 {
-    "collectionName": "components_home_place",
-    "info": {
-        "displayName": "Карточка Местоположения",
-        "icon": "pin"
+  "collectionName": "components_home_place",
+  "info": {
+    "displayName": "Карточка Местоположения",
+    "icon": "pin"
+  },
+  "attributes": {
+    "place": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
     },
-    "attributes": {
-        "place": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::place.place"
-        },
-        "image": {
-            "allowedTypes": [
-                "images"
-            ],
-            "type": "media",
-            "multiple": false
-        }
+    "card": {
+      "type": "component",
+      "component": "home.card"
     }
+  }
 }

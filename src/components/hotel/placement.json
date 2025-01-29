@@ -1,28 +1,22 @@
 {
-    "collectionName": "components_hotel_placement",
-    "info": {
-        "displayName": "Размещение",
-        "icon": "size"
+  "collectionName": "components_hotel_placement",
+  "info": {
+    "displayName": "Размещение",
+    "icon": "size"
+  },
+  "attributes": {
+    "kind": {
+      "type": "enumeration",
+      "enum": ["Adult", "ExtraAdult", "Child", "ExtraChild", "ChildBandWithoutBed"]
     },
-    "attributes": {
-        "kind": {
-            "type": "enumeration",
-            "enum": [
-                "Adult",
-                "ExtraAdult",
-                "Child",
-                "ExtraChild",
-                "ChildBandWithoutBed"
-            ]
-        },
-        "count": {
-            "type": "integer"
-        },
-        "minAge": {
-            "type": "integer"
-        },
-        "maxAge": {
-            "type": "integer"
-        }
+    "count": {
+      "type": "integer"
+    },
+    "minAge": {
+      "type": "integer"
+    },
+    "maxAge": {
+      "type": "integer"
     }
+  }
 }

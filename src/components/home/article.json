@@ -1,20 +1,17 @@
 {
-    "collectionName": "components_home_article",
-    "info": {
-        "displayName": "Карточка статьи"
+  "collectionName": "components_home_article",
+  "info": {
+    "displayName": "Карточка статьи"
+  },
+  "attributes": {
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
     },
-    "attributes": {
-        "article": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::article.article"
-        },
-        "image": {
-            "allowedTypes": [
-                "images"
-            ],
-            "type": "media",
-            "multiple": false
-        }
+    "card": {
+      "type": "component",
+      "component": "home.card"
     }
+  }
 }

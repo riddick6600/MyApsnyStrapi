@@ -1,13 +1,17 @@
 {
-    "collectionName": "components_home_hotel",
-    "info": {
-        "displayName": "Карточка отеля"
+  "collectionName": "components_home_hotel",
+  "info": {
+    "displayName": "Карточка отеля"
+  },
+  "attributes": {
+    "hotel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hotel.hotel"
     },
-    "attributes": {
-        "hotel": {
-            "type": "relation",
-            "relation": "oneToOne",
-            "target": "api::hotel.hotel"
-        }
+    "card": {
+      "type": "component",
+      "component": "home.card"
     }
+  }
 }

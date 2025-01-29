@@ -1,28 +1,28 @@
 {
-    "collectionName": "components_hotel_policy",
-    "info": {
-        "displayName": "Правила отеля",
-        "icon": "information"
+  "collectionName": "components_hotel_policy",
+  "info": {
+    "displayName": "Правила отеля",
+    "icon": "information"
+  },
+  "attributes": {
+    "checkInTime": {
+      "type": "string"
     },
-    "attributes": {
-        "checkInTime": {
-            "type": "string"
-        },
-        "checkOutTime": {
-            "type": "string"
-        },
-        "minLengthOfStay": {
-            "type": "integer"
-        },
-        "minDaysBeforeArrival": {
-            "type": "integer"
-        },
-        "smoking": {
-            "type": "string"
-        },
-        "animal": {
-            "type": "component",
-            "component": "hotel.animal"
-        }
+    "checkOutTime": {
+      "type": "string"
+    },
+    "minLengthOfStay": {
+      "type": "integer"
+    },
+    "minDaysBeforeArrival": {
+      "type": "integer"
+    },
+    "smoking": {
+      "type": "string"
+    },
+    "animal": {
+      "type": "component",
+      "component": "hotel.animal"
     }
+  }
 }

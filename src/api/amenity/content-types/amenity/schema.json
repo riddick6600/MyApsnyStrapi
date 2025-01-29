@@ -1,28 +1,26 @@
 {
-    "kind": "collectionType",
-    "collectionName": "amenities",
-    "info": {
-        "singularName": "amenity",
-        "pluralName": "amenities",
-        "displayName": "Удобства"
+  "kind": "collectionType",
+  "collectionName": "amenities",
+  "info": {
+    "singularName": "amenity",
+    "pluralName": "amenities",
+    "displayName": "Удобства"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "attributes": {
-        "name": {
-            "type": "string",
-            "required": true,
-            "unique": true
-        },
-        "slug": {
-            "type": "string",
-            "required": true,
-            "unique": true
-        },
-        "image": {
-            "allowedTypes": [
-                "images"
-            ],
-            "type": "media",
-            "multiple": false
-        }
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "allowedTypes": ["images"],
+      "type": "media",
+      "multiple": false
     }
+  }
 }

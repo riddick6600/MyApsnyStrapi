@@ -1,21 +1,24 @@
 {
-    "kind": "collectionType",
-    "collectionName": "hoteltypes",
-    "info": {
-        "singularName": "hoteltype",
-        "pluralName": "hoteltypes",
-        "displayName": "Типы отеля"
+  "kind": "collectionType",
+  "collectionName": "hoteltypes",
+  "info": {
+    "singularName": "hoteltype",
+    "pluralName": "hoteltypes",
+    "displayName": "Типы отеля"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
-    "attributes": {
-        "name": {
-            "type": "string",
-            "required": true,
-            "unique": true
-        },
-        "slug": {
-            "type": "string",
-            "required": true,
-            "unique": true
-        }
+    "sort": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
+  }
 }

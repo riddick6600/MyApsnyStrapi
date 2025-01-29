@@ -1,27 +1,27 @@
 {
-    "collectionName": "components_travelline_cancellation_rules",
-    "info": {
-        "displayName": "Правила отмены Обертка",
-        "icon": "calendar-times"
+  "collectionName": "components_travelline_cancellation_rules",
+  "info": {
+    "displayName": "Правила отмены Обертка",
+    "icon": "calendar-times"
+  },
+  "attributes": {
+    "externalId": {
+      "type": "string"
     },
-    "attributes": {
-        "externalId": {
-            "type": "string"
-        },
-        "referencePointKind": {
-            "type": "enumeration",
-            "enum": [
-                "ProviderArrivalTime",
-                "ProviderDepartureTime",
-                "GuestArrivalTime",
-                "CustomArrivalTime",
-                "BookingCreationTime"
-            ]
-        },
-        "cancellationTerms": {
-            "type": "component",
-            "repeatable": true,
-            "component": "travelline.cancellation-term"
-        }
+    "referencePointKind": {
+      "type": "enumeration",
+      "enum": [
+        "ProviderArrivalTime",
+        "ProviderDepartureTime",
+        "GuestArrivalTime",
+        "CustomArrivalTime",
+        "BookingCreationTime"
+      ]
+    },
+    "cancellationTerms": {
+      "type": "component",
+      "repeatable": true,
+      "component": "travelline.cancellation-term"
     }
+  }
 }

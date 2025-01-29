@@ -1,33 +1,25 @@
 {
-    "collectionName": "components_travelline_amenity",
-    "info": {
-        "displayName": "Удобство",
-        "icon": "star"
+  "collectionName": "components_travelline_amenity",
+  "info": {
+    "displayName": "Удобство",
+    "icon": "star"
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
     },
-    "attributes": {
-        "name": {
-            "type": "string"
-        },
-        "code": {
-            "type": "string"
-        },
-        "category": {
-            "type": "enumeration",
-            "enum": [
-                "bathroom",
-                "bedroom",
-                "kitchen",
-                "entertainment",
-                "climate",
-                "internet",
-                "other"
-            ]
-        },
-        "icon": {
-            "type": "string"
-        },
-        "description": {
-            "type": "string"
-        }
+    "code": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["bathroom", "bedroom", "kitchen", "entertainment", "climate", "internet", "other"]
+    },
+    "icon": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
     }
+  }
 }

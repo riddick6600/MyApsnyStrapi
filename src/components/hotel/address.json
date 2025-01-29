@@ -1,22 +1,22 @@
 {
-    "collectionName": "components_hotel_address",
-    "info": {
-        "displayName": "Адрес",
-        "icon": "map"
+  "collectionName": "components_hotel_address",
+  "info": {
+    "displayName": "Адрес",
+    "icon": "map"
+  },
+  "attributes": {
+    "addressLine": {
+      "type": "string"
     },
-    "attributes": {
-        "addressLine": {
-            "type": "string"
-        },
-        "latitude": {
-            "type": "float",
-            "min": -90,
-            "max": 90
-        },
-        "longitude": {
-            "type": "float",
-            "min": -180,
-            "max": 180
-        }
+    "latitude": {
+      "type": "float",
+      "min": -90,
+      "max": 90
+    },
+    "longitude": {
+      "type": "float",
+      "min": -180,
+      "max": 180
     }
+  }
 }

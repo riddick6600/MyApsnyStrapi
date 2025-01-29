@@ -1,21 +1,24 @@
 {
-    "collectionName": "components_hotel_faq",
-    "info": {
-        "displayName": "Вопросы и ответы"
+  "collectionName": "components_hotel_faq",
+  "info": {
+    "displayName": "Вопросы и ответы"
+  },
+  "attributes": {
+    "name": {
+      "type": "text"
     },
-    "attributes": {
-        "name": {
-            "type": "text"
-        },
-        "description": {
-            "type": "richtext"
-        },
-        "image": {
-            "allowedTypes": [
-                "images"
-            ],
-            "type": "media",
-            "multiple": false
-        }
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
+  }
 }
