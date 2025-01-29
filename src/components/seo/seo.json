@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_seo_seos",
+  "info": {
+    "displayName": "seo",
+    "icon": "search",
+    "description": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "robots": {
+      "type": "text"
+    },
+    "referrer": {
+      "type": "enumeration",
+      "enum": [
+        "no-referrer",
+        "no-referrer-when-downgrade",
+        "origin",
+        "origin-when-cross-origin",
+        "same-origin",
+        "strict-origin",
+        "strict-origin-when-cross-origin",
+        "unsafe-url"
+      ]
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "openGraph": {
+      "type": "component",
+      "component": "seo.open-graph",
+      "repeatable": false
+    }
+  }
+}

@@ -25,8 +25,7 @@
         "home.hotel",
         "home.card",
         "home.hoteltype"
-      ],
-      "required": false
+      ]
     },
     "slogan2": {
       "type": "string"

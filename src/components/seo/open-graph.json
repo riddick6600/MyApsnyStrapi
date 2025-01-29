@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_shared_open_graphs",
+  "collectionName": "components_seo_open_graphs",
   "info": {
     "displayName": "openGraph",
     "icon": "project-diagram"
@@ -14,7 +14,9 @@
       "maxLength": 200
     },
     "og:image": {
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "type": "media",
       "multiple": false
     },

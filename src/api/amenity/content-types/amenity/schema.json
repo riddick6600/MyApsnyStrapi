@@ -12,6 +12,9 @@
       "required": true,
       "unique": true
     },
+    "sort": {
+      "type": "integer"
+    },
     "slug": {
       "type": "string",
       "required": true,
