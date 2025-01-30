@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Полезная информация",
+        "description": "Все о путешествях по Абхазии",
+        "page": {
+            "title": "Полезная информация",
+            "slug": "poleznaya_informacia"
+        }
+    },
+    {
+        "name": "Абхазия",
+        "description": "Абхазия",
+        "page": {
+            "title": "Абхазия",
+            "slug": "abkhazia",
+            "description": "Абхазия",
+            "seo": {
+                "title": "Абхазия"
+            }
+        }
+    }
+]
