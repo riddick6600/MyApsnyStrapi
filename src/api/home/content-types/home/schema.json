@@ -8,7 +8,7 @@
     "description": "Данные блоков на главной"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "attributes": {
     "name": {

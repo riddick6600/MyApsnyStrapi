@@ -7,6 +7,9 @@
     "displayName": "Статьи",
     "description": "Create your blog content"
   },
+  "options": {
+    "draftAndPublish": true
+  },
   "attributes": {
     "name": {
       "type": "string"
@@ -17,8 +20,23 @@
     "description": {
       "type": "text"
     },
-    "content": {
-      "type": "blocks"
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "articles"
+    },
+    "author": {
+      "type": "string"
+    },
+    "readingTimeMinutes": {
+      "type": "integer"
+    },
+    "visited": {
+      "type": "integer"
+    },
+    "fakeVisited": {
+      "type": "integer"
     },
     "image": {
       "allowedTypes": [
@@ -27,11 +45,8 @@
       "type": "media",
       "multiple": false
     },
-    "categories": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "articles"
+    "content": {
+      "type": "blocks"
     },
     "page": {
       "type": "component",
