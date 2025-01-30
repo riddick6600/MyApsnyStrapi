@@ -14,6 +14,9 @@
     "description": {
       "type": "text"
     },
+    "content": {
+      "type": "blocks"
+    },
     "amenities": {
       "type": "relation",
       "relation": "oneToMany",
@@ -33,7 +36,9 @@
     "images": {
       "type": "media",
       "multiple": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "occupancy": {
       "type": "component",

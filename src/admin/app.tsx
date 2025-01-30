@@ -8,7 +8,5 @@ export default {
       ru: ru,
     },
   },
-  bootstrap(app: StrapiApp) {
-    console.log(app);
-  },
+  bootstrap(app: StrapiApp) {},
 };

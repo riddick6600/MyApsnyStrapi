@@ -1,11 +1,10 @@
 export default () => ({
-  seo: { enabled: true },
   documentation: {
     enabled: true,
     config: {
       openapi: "3.0.0",
       info: {
-        version: "1.0.1",
+        version: "1.0.0",
         title: "MyApsny API данных сайта",
         description: "Сервис хранения данных для сайта myapsny.ru",
         termsOfService: null,
@@ -13,7 +12,7 @@ export default () => ({
           name: "MyApsny",
           email: null,
           // email: "riddick6600@mail.ru",
-          url: "https://new.myapsny.ru",
+          url: "http://strapi.myapsny.ru",
         },
         license: null,
       },
