@@ -1,27 +1,28 @@
 {
-    "collectionName": "components_page_pages",
-    "info": {
-        "displayName": "page",
-        "icon": "monitor",
-        "description": ""
+  "collectionName": "components_page_pages",
+  "info": {
+    "displayName": "page",
+    "icon": "monitor",
+    "description": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
     },
-    "attributes": {
-        "title": {
-            "type": "string"
-        },
-        "slug": {
-            "type": "string",
-            "unique": true
-        },
-        "description": {
-            "type": "text"
-        },
-        "content": {
-            "type": "blocks"
-        },
-        "seo": {
-            "type": "component",
-            "component": "seo.seo"
-        }
+    "slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "seo": {
+      "type": "component",
+      "component": "page.seo"
     }
+  }
 }

@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_seo_seos",
+  "collectionName": "components_page_seos",
   "info": {
-    "displayName": "seo",
+    "displayName": "SEO",
     "icon": "search",
     "description": ""
   },
@@ -40,7 +40,7 @@
     },
     "openGraph": {
       "type": "component",
-      "component": "seo.open-graph",
+      "component": "page.open-graph",
       "repeatable": false
     }
   }

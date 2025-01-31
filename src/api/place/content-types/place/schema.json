@@ -16,8 +16,15 @@
     "isCity": {
       "type": "boolean"
     },
+    "isHotelsFilter": {
+      "type": "boolean"
+    },
     "description": {
       "type": "text"
+    },
+    "address": {
+      "type": "component",
+      "component": "hotel.address"
     },
     "content": {
       "type": "blocks"
@@ -25,7 +32,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "page": {
       "type": "component",

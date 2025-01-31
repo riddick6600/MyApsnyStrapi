@@ -4,7 +4,11 @@
   "info": {
     "singularName": "hoteltype",
     "pluralName": "hoteltypes",
-    "displayName": "Типы отеля"
+    "displayName": "Типы отеля",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -15,10 +19,20 @@
     "sort": {
       "type": "integer"
     },
+    "isHotelsFilter": {
+      "type": "boolean"
+    },
     "slug": {
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

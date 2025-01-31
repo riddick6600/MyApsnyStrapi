@@ -14,9 +14,6 @@
     "name": {
       "type": "string"
     },
-    "isActive": {
-      "type": "boolean"
-    },
     "sort": {
       "type": "integer"
     },

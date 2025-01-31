@@ -4,14 +4,15 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Страницы"
+    "displayName": "Страницы",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "sort": {
-      "type": "integer"
     },
     "description": {
       "type": "text"

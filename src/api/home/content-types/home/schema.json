@@ -58,6 +58,11 @@
         "home.hoteltype"
       ]
     },
+    "faq": {
+      "type": "component",
+      "component": "hotel.faq",
+      "repeatable": true
+    },
     "page": {
       "type": "component",
       "component": "page.page"

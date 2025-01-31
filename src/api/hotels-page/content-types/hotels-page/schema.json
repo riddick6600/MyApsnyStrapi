@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hotels_pages",
+  "info": {
+    "singularName": "hotels-page",
+    "pluralName": "hotels-pages",
+    "displayName": "hotelsPage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
+    },
+    "hotelType": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::hoteltype.hoteltype"
+    },
+    "description": {
+      "type": "text"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "page": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.page"
+    }
+  }
+}
