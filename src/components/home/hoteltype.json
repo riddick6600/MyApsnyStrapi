@@ -9,6 +9,11 @@
       "relation": "oneToOne",
       "target": "api::hoteltype.hoteltype"
     },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
+    },
     "card": {
       "type": "component",
       "component": "home.card"

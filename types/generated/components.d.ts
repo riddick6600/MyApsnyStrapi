@@ -44,6 +44,7 @@ export interface HomeHoteltype extends Struct.ComponentSchema {
   };
   attributes: {
     card: Schema.Attribute.Component<"home.card", false>;
+    city: Schema.Attribute.Relation<"oneToOne", "api::place.place">;
     hoteltype: Schema.Attribute.Relation<"oneToOne", "api::hoteltype.hoteltype">;
   };
 }
