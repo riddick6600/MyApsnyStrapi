@@ -333,5 +333,6 @@
     "content-manager.components.page.seo.robots": "robots",
     "content-manager.components.page.seo.referrer": "referrer",
     "content-manager.components.page.seo.image": "image",
-    "content-manager.components.page.seo.openGraph": "openGraph"
+    "content-manager.components.page.seo.openGraph": "openGraph",
+    "content-manager.content-types.api::hotel.hotel.pole": "Поле"
 }
