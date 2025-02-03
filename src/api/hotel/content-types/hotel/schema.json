@@ -11,6 +11,11 @@
     "draftAndPublish": true
   },
   "attributes": {
+    "pole": {
+    "type": "string",
+    "default": "full",
+    "required": true
+    },
     "name": {
       "type": "string"
     },
@@ -99,6 +104,8 @@
     },
     "logo": {
       "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -106,6 +113,7 @@
     "images": {
       "type": "media",
       "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
