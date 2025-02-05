@@ -20,7 +20,7 @@
     "amenities": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::amenity.amenity"
+      "target": "api::room-amenity.room-amenity"
     },
     "size": {
       "type": "string"

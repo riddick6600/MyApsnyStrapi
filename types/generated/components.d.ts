@@ -221,7 +221,7 @@ export interface HotelRoomType extends Struct.ComponentSchema {
     icon: "bed";
   };
   attributes: {
-    amenities: Schema.Attribute.Relation<"oneToMany", "api::amenity.amenity">;
+    amenities: Schema.Attribute.Relation<"oneToMany", "api::room-amenity.room-amenity">;
     beds: Schema.Attribute.Component<"hotel.bed", true>;
     content: Schema.Attribute.Blocks;
     count: Schema.Attribute.String;

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "amenities",
+  "collectionName": "room-amenities",
   "info": {
-    "singularName": "amenity",
-    "pluralName": "amenities",
-    "displayName": "Удобства в Отеле"
+    "singularName": "room-amenity",
+    "pluralName": "room-amenities",
+    "displayName": "Удобства в Номерах"
   },
   "attributes": {
     "name": {

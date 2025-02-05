@@ -332,7 +332,7 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiAmenityAmenity extends Struct.CollectionTypeSchema {
   collectionName: "amenities";
   info: {
-    displayName: "\u0423\u0434\u043E\u0431\u0441\u0442\u0432\u0430";
+    displayName: "\u0423\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u0432 \u041E\u0442\u0435\u043B\u0435";
     pluralName: "amenities";
     singularName: "amenity";
   };
@@ -661,6 +661,32 @@ export interface ApiReviewReview extends Struct.CollectionTypeSchema {
     updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
     verificationDate: Schema.Attribute.DateTime;
     verifiedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRoomAmenityRoomAmenity extends Struct.CollectionTypeSchema {
+  collectionName: "room-amenities";
+  info: {
+    displayName: "\u0423\u0434\u043E\u0431\u0441\u0442\u0432\u0430 \u0432 \u041D\u043E\u043C\u0435\u0440\u0430\u0445";
+    pluralName: "room-amenities";
+    singularName: "room-amenity";
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
+    image: Schema.Attribute.Media<"images">;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<"oneToMany", "api::room-amenity.room-amenity"> &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required & Schema.Attribute.Unique;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String & Schema.Attribute.Required & Schema.Attribute.Unique;
+    sort: Schema.Attribute.Integer;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<"oneToOne", "admin::user"> & Schema.Attribute.Private;
   };
 }
 
@@ -1086,6 +1112,7 @@ declare module "@strapi/strapi" {
       "api::page.page": ApiPagePage;
       "api::place.place": ApiPlacePlace;
       "api::review.review": ApiReviewReview;
+      "api::room-amenity.room-amenity": ApiRoomAmenityRoomAmenity;
       "plugin::content-releases.release": PluginContentReleasesRelease;
       "plugin::content-releases.release-action": PluginContentReleasesReleaseAction;
       "plugin::i18n.locale": PluginI18NLocale;
